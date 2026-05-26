@@ -56,23 +56,36 @@ We want to create an interactive map and a dashboard to show the areas most at r
 
 ## Success criteria by milestone
 
-- **M1, proposal (W4):** <measurable criterion>
-- **M2, data summary (W7):** <measurable criterion>
-- **M3, poster rough draft (W10):** <measurable criterion>
-- **M4, write-up rough draft (W12):** <measurable criterion>
-- **M5, final write-up and poster (W14):** <measurable criterion>
+- **M1, proposal (W4):**
+      - Are all of the requirements of the project proposal met?
+      - Do we have all the datasets we want to use?
+      - Do we have a rough idea of what our final is?
+- **M2, data summary (W7):**
+      - Do we know for sure what data is viable?
+      - Do we have all the data we need to answer our research question?
+- **M3, poster rough draft (W10):**
+      - Can we answer our research question with our analysis?
+      - Do we have enough of a product we can get helpful feedback from?
+      - Do we have a list of things to check off by the final draft? 
+- **M4, write-up rough draft (W12):**
+      - Do we have a list of things to check off by the final draft?
+      - Do we have a rough draft that is 80% of the length it is supposed to be?
+- **M5, final write-up and poster (W14):**
+      - Is it done?
+      - Did we practice?
+      - Did two people peer edit the write up?
 
 ## Working agreements (internal to owner team)
 
-- **Sync rhythm:** <e.g., one async standup per weekday in `#<project>-standup`>
-- **Code review:** <who reviews what, by when>
-- **Decision rule:** <how the team decides when it disagrees>
+- **Sync rhythm:** We are meeting at 11am most Saturdays.
+- **Code review:** At each meeting, we will assign tasks for each of us to do. We will check in and review with each of our code at each meetings.
+- **Decision rule:** If special circumstances come up, we will text about it and decide together.
 
 ## Working agreements (triad with peer POs)
 
-- **Studio Brief due:** <by 5 pm the Sunday before class, committed to `studio/briefs/W<NN>-<peer>.md` and linked in `#<project>-studio` on Discord>. If the owner team needs the peer POs to read or review something specific *before* the Studio Session (a data preview, model results, a draft figure), file the Brief earlier so the peer POs actually have time to do that homework. Otherwise the default is "before the Studio Session starts."
-- **Studio Critique due:** <by Midnight the Wednesday after class>.
-- **Swim Lanes due:** <by 5pm the Saturday after class>
+- **Studio Brief due:** by 5 pm the Sunday before class, committed to `studio/briefs/W<NN>-<peer>.md` and linked in our Google Chat. 
+- **Studio Critique due:** by Midnight the Wednesday after class.
+- **Swim Lanes due:** by 5pm the Saturday after class
 - **Priority conflict resolution:** owner team integrates briefs in good faith; the instructor arbitrates (as Process Expert) if peer POs and owner team disagree.
 
 ## Response SLAs (Service Level Agreements)
@@ -114,7 +127,7 @@ A PBI is done, and may be moved from `Analyze` into `Done`, when:
 ## Stakeholder alignment memo (one-page summary)
 
 ### Why we exist
-<two sentences from Vision and Mission>
+Our project aims to add to the current knowledge within the Forestry, Conservation, Ecology, and Environmental Science realms. We hope that this project could be used by government or private organizations to further prevent the spread of the Emerald Ash Borer. We want to create an interactive map and a dashboard to show the areas most at risk of the infestions of the Emerald Ash Borer and recommend ways to prevent the spread.
 
 ### What we will deliver to peer POs every week
 - An Iteration Review in this `README.md` by <Saturday / 5pm>
