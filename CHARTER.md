@@ -2,30 +2,57 @@
 
 > Filled in live during the **Studio Charter** session in week 3. Every section below is committed in the same commit at the end of that class block. See [Studio Charter (single-session inception)](https://courses.lpcordova.phd/data510/project-framework/charter-inception.html) for the script and time-boxes.
 
-**Owner team:** <names>
-**Owner Product Lead:** <name>
-**Peer Stakeholder POs:** <names of your 2 or 3 peer PO individuals>
+**Owner team:** Siera Edwards and Serenna Walter
+**Owner Product Lead:** Serenna Walter
+**Peer Stakeholder POs:** Brooke Proctor, Amaya Supancich-McCord, Spencer Fiden
 **Instructor / Sponsor:** Lucas Cordova (`LucasCordova` on GitHub)
-**GitHub repo:** <link to this repo>
-**GitHub Projects board:** <link>
-**Discord category:** `#<project>-*`
-**Studio Session:** <1, 2, or 3>
-**Studio formed:** <date>
+**GitHub repo:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project
+**GitHub Projects board:** [<link>](https://github.com/users/Serenna4/projects/2)
+**Discord category:** `#Project 21*`
+**Studio Session:** 3
+**Studio formed:** 5/25/2026
 
 ## Vision
 
-One or two sentences. The world (or organization, or domain) if this project succeeds.
+Our project aims to add to the current knowledge within the Forestry, Conservation, Ecology, and Environmental Science realms. We hope that this project could be used by government or private organizations to further prevent the spread of the Emerald Ash Borer. 
 
 ## Mission
 
-One or two sentences. What the owner team will actually do this semester.
+We want to create an interactive map and a dashboard to show the areas most at risk of the infestions of the Emerald Ash Borer and recommend ways to prevent the spread.
 
 ## Context
 
-- **Users / affected parties:** who benefits, who is at risk, who might use the result.
+- **Users / affected parties:**
+    - Local communitieis and the environment are affected and benefited by this project.
+    - At risk are ash trees (primarily in Oregon), white fringe trees, and olive trees. 
 - **Data sources (proposed):** named sources, access status, license / ethics notes.
+    - Emerald Ash Borer (EAB) in Oregon: https://oregon-eab-geo.hub.arcgis.com/
+        - Access: Publically accessible online map. We are unsure of how to download the data itself. 
+        - Ethics: It might not be a representative survey. This is data from the state, which is reliable, but it could be more influenced to locations that are around public areas.
+    - Willamette Valley Hardwoods Model Vector Tile Layer: https://geo.maps.arcgis.com/home/item.html?id=b48f922706014b63b18a56734d647e2b
+        - Access: Publically accessible online map. We are unsure of how to download the data itself. 
+        - Ethics: It might not be a representative survey. This is data from the state, which is reliable, but it could be more influenced to locations that are around public areas.
+    - TreePlotter: https://pg-cloud.com/Oregon/
+        - Access: Publically accessible online map. We are unsure of how to download the data itself. 
+        - Ethics: It might not be a representative survey. This is data from the state, which is reliable, but it could be more influenced to locations that are around public areas.
+    - Oregon EAB Trap App: https://geo.maps.arcgis.com/apps/mapviewer/index.html?webmap=cd7f5da6130749a9b7b99a45844b0f24
+        - Access: Publically accessible online map. We are unsure of how to download the data itself. 
+        - Ethics: It might not be a representative survey. This is data from the state, which is reliable, but it could be more influenced to locations that are around public areas.
+    - Waterway Locations
+        - Access: Not achieved yet
+    - Temperature and Humidity
+        - Access: Not achieved yet
+    - Population Density (mostly transported by people moving wood)
+        - Access: Not achieved yet
+    - Type of Area (Rural vs. Urban)
 - **Constraints:** time, compute, access, skills, scope.
+    - Time: We want to have data over time. We want to predict for next year. 
+    - Scope: We will have to pick a difinitive area to look at.
+    - Access: Downloading data from publically accessible map.
+    - Skills: Bringing GIS data into postgres.
 - **Ethics risks:** consent, retention, PII, fairness, deployment risk.
+    - Data Accessibility: We aren't anticipating issues with open data.
+    - Deployment risks: We are a bit worried that our predictions could be inaccurate and could put up preventative measures in the wrong areas.
 
 ## Success criteria by milestone
 
@@ -43,8 +70,9 @@ One or two sentences. What the owner team will actually do this semester.
 
 ## Working agreements (triad with peer POs)
 
-- **Studio Brief due:** <example: by 5 pm the day before class, committed to `studio/briefs/W<NN>-<peer>.md` and linked in `#<project>-studio` on Discord>. If the owner team needs the peer POs to read or review something specific *before* the Studio Session (a data preview, model results, a draft figure), file the Brief earlier so the peer POs actually have time to do that homework. Otherwise the default is "before the Studio Session starts."
-- **Studio Critique due:** <example: by the end of class for the in-person discussion, or at an agreed-upon time within one day after class (e.g., 5 pm the next day) if the peer PO needs extra time to draft a thoughtful write-up>.
+- **Studio Brief due:** <by 5 pm the Sunday before class, committed to `studio/briefs/W<NN>-<peer>.md` and linked in `#<project>-studio` on Discord>. If the owner team needs the peer POs to read or review something specific *before* the Studio Session (a data preview, model results, a draft figure), file the Brief earlier so the peer POs actually have time to do that homework. Otherwise the default is "before the Studio Session starts."
+- **Studio Critique due:** <by Midnight the Wednesday after class>.
+- **Swim Lanes due:** <by 5pm the Saturday after class>
 - **Priority conflict resolution:** owner team integrates briefs in good faith; the instructor arbitrates (as Process Expert) if peer POs and owner team disagree.
 
 ## Response SLAs (Service Level Agreements)
@@ -53,11 +81,11 @@ A **Service Level Agreement** is a written promise the triad makes about *how fa
 
 | When this signal arrives... | Who responds | By when |
 |-----------------------------|--------------|---------|
-| Peer PO files a **Studio Brief** (commits to `studio/briefs/...`, links in `#<project>-studio`) | Owner team | <e.g., acknowledge in `#<project>-studio` within 24 hours, with a first-pass adopt / defer / decline call for each item> |
-| Peer PO files a **Studio Critique** | Owner team | <e.g., respond in `#<project>-studio` within 24 hours and capture follow-up items into the backlog> |
-| Owner team posts an **Iteration Review** in `README.md` | Both peer POs | <e.g., read before filing the next Brief and Critique> |
-| Owner team flags a **blocker** in `#<project>-blockers` | Instructor, plus any tagged peer PO | <e.g., responds by the next Studio Session at the latest; faster if online> |
-| Anyone asks a clarifying question in `#<project>-general` | Whoever is tagged (default: owner team) | <e.g., reply within 48 hours, even if the reply is "we will look at this next iteration"> |
+| Peer PO files a **Studio Brief** (commits to `studio/briefs/...`, links in `#<project>-studio`) | Owner team | <e.g., acknowledge in `#<project>-studio` by Monday at 6pm, with a first-pass adopt / defer / decline call for each item> |
+| Peer PO files a **Studio Critique** | Owner team | <e.g., respond in `#<project>-studio` by Saturday at Noon and capture follow-up items into the backlog> |
+| Owner team posts an **Iteration Review** in `README.md` | Both peer POs | <e.g., read before filing the next Brief and Critique.> |
+| Owner team flags a **blocker** in `#<project>-blockers` | Instructor, plus any tagged peer PO | <e.g., responds by the next Studio Session at the latest; faster if online. Send a text if you want feedback.> |
+| Anyone asks a clarifying question in `#<project>-general` | Whoever is tagged (default: owner team) | <e.g., reply within 48 hours, even if the reply is "we will look at this next iteration". Send a text in the chat.> |
 
 ## Definition of Ready (PBI)
 
@@ -66,7 +94,7 @@ A PBI is ready to be pulled out of `Backlog` and moved into `Create` when it has
 - A one-sentence hypothesis or user story.
 - A named **Create**, **Observe**, **Analyze** triple.
 - A milestone tag (`M1-proposal`, `M2-data-summary`, `M3-poster-draft`, `M4-writeup-draft`, `M5-final`, `infra`, `ethics`).
-- A T-shirt size estimate (S, M, L, XL).
+- A T-shirt size estimate (Seed, Flower, Tree, Forest).
 - WIP slack on the board: `Create + Observe + Analyze` is below the team's WIP cap (owners + 1).
 
 ## Definition of Done (PBI)
@@ -89,12 +117,12 @@ A PBI is done, and may be moved from `Analyze` into `Done`, when:
 <two sentences from Vision and Mission>
 
 ### What we will deliver to peer POs every week
-- An Iteration Review in this `README.md` by <day / time>
+- An Iteration Review in this `README.md` by <Saturday / 5pm>
 - A summary of which Studio Brief items we adopted, deferred, or declined and why
 
 ### What we need from peer POs every week
-- A Studio Brief by <day / time> next class (next iteration's requirements, questions, risks)
-- A Studio Critique by <day / time> next class (assessment of last week's delivery)
+- A Studio Brief by <Sunday / 5pm> next class (next iteration's requirements, questions, risks)
+- A Studio Critique by <Wednesday / 5pm> next class (assessment of last week's delivery)
 
 ### How to reach us
 - Discord category: `#<project>-general` (day-to-day), `#<project>-studio` (Briefs and Critiques), `#<project>-blockers` (impediments)
