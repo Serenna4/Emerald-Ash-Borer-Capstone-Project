@@ -8,7 +8,7 @@
 - **Instructor / Sponsor:** Lucas Cordova (`LucasCordova` on GitHub)
 - **GitHub repo:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project
 - **GitHub Projects board:** https://github.com/users/Serenna4/projects/2
-- **Discord category:** `#Project 21*`
+- **Discord category:** `#Project 21`
 - **Studio Session:** 3
 - **Studio formed:** 5/25/2026
 
