@@ -57,23 +57,23 @@ We want to create an interactive map and a dashboard to show the areas most at r
 ## Success criteria by milestone
 
 - **M1, proposal (W4):**
-      - Are all of the requirements of the project proposal met?
-      - Do we have all the datasets we want to use?
-      - Do we have a rough idea of what our final is?
+    - Are all of the requirements of the project proposal met?
+    - Do we have all the datasets we want to use?
+    - Do we have a rough idea of what our final is?
 - **M2, data summary (W7):**
-      - Do we know for sure what data is viable?
-      - Do we have all the data we need to answer our research question?
+    - Do we know for sure what data is viable?
+    - Do we have all the data we need to answer our research question?
 - **M3, poster rough draft (W10):**
-      - Can we answer our research question with our analysis?
-      - Do we have enough of a product we can get helpful feedback from?
-      - Do we have a list of things to check off by the final draft? 
+    - Can we answer our research question with our analysis?
+    - Do we have enough of a product we can get helpful feedback from?
+    - Do we have a list of things to check off by the final draft? 
 - **M4, write-up rough draft (W12):**
-      - Do we have a list of things to check off by the final draft?
-      - Do we have a rough draft that is 80% of the length it is supposed to be?
+    - Do we have a list of things to check off by the final draft?
+    - Do we have a rough draft that is 80% of the length it is supposed to be?
 - **M5, final write-up and poster (W14):**
-      - Is it done?
-      - Did we practice?
-      - Did two people peer edit the write up?
+    - Is it done?
+    - Did we practice?
+    - Did two people peer edit the write up?
 
 ## Working agreements (internal to owner team)
 
