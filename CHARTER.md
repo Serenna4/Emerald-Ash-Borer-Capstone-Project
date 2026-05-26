@@ -130,14 +130,14 @@ A PBI is done, and may be moved from `Analyze` into `Done`, when:
 Our project aims to add to the current knowledge within the Forestry, Conservation, Ecology, and Environmental Science realms. We hope that this project could be used by government or private organizations to further prevent the spread of the Emerald Ash Borer. We want to create an interactive map and a dashboard to show the areas most at risk of the infestions of the Emerald Ash Borer and recommend ways to prevent the spread.
 
 ### What we will deliver to peer POs every week
-- An Iteration Review in this `README.md` by <Saturday / 5pm>
+- An Iteration Review in this `README.md` by **Saturday / 5pm**
 - A summary of which Studio Brief items we adopted, deferred, or declined and why
 
 ### What we need from peer POs every week
-- A Studio Brief by <Sunday / 5pm> next class (next iteration's requirements, questions, risks)
-- A Studio Critique by <Wednesday / 5pm> next class (assessment of last week's delivery)
+- A Studio Brief by **Sunday / 5pm** next class (next iteration's requirements, questions, risks)
+- A Studio Critique by **Wednesday / 5pm** next class (assessment of last week's delivery)
 
 ### How to reach us
 - Discord category: `#<project>-general` (day-to-day), `#<project>-studio` (Briefs and Critiques), `#<project>-blockers` (impediments)
-- GitHub repo: <link>
-- GitHub Projects board: <link>
+- GitHub repo: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project
+- GitHub Projects board: https://github.com/users/Serenna4/projects/2
