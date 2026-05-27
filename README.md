@@ -10,8 +10,8 @@
 | Owner Product Lead | Serenna Walter |
 | Peer Stakeholder POs | Brooke Proctor, Amaya Supancich-McCord, Spencer Fiden |
 | Studio Session | 3 |
-| GitHub repo | <link to this repo> |
-| GitHub Projects board | https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project |
+| GitHub repo | https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project |
+| GitHub Projects board | https://github.com/users/Serenna4/projects/2 |
 | Discord category | `#Project 21` |
 | Instructor / Sponsor | Lucas Cordova (`LucasCordova` on GitHub) |
 
