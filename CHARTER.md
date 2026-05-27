@@ -94,11 +94,11 @@ A **Service Level Agreement** is a written promise the triad makes about *how fa
 
 | When this signal arrives... | Who responds | By when |
 |-----------------------------|--------------|---------|
-| Peer PO files a **Studio Brief** (commits to `studio/briefs/...`, links in `#<project>-studio`) | Owner team | <e.g., acknowledge in `#<project>-studio` by Monday at 6pm, with a first-pass adopt / defer / decline call for each item> |
-| Peer PO files a **Studio Critique** | Owner team | <e.g., respond in `#<project>-studio` by Saturday at 5pm and capture follow-up items into the backlog> |
-| Owner team posts an **Iteration Review** in `README.md` | Both peer POs | <e.g., read before filing the next Brief and Critique.> |
-| Owner team flags a **blocker** in `#<project>-blockers` | Instructor, plus any tagged peer PO | <e.g., responds by the next Studio Session at the latest; faster if online. Send a text if you want feedback.> |
-| Anyone asks a clarifying question in `#<project>-general` | Whoever is tagged (default: owner team) | <e.g., reply within 48 hours, even if the reply is "we will look at this next iteration". Send a text in the chat.> |
+| Peer PO files a **Studio Brief** (commits to `studio/briefs/...`, links in Google Chat) | Owner team | <e.g., acknowledge in Google Chat by Monday at 6pm, with a first-pass adopt / defer / decline call for each item |
+| Peer PO files a **Studio Critique** | Owner team | respond in Google Chat by Saturday at 5pm and capture follow-up items into the backlog |
+| Owner team posts an **Iteration Review** in `README.md` | Both peer POs | read before filing the next Brief and Critique. |
+| Owner team flags a **blocker** in our Google Chat | Instructor, plus any tagged peer PO | responds by the next Studio Session at the latest; faster if online. Send a text if you want feedback. |
+| Anyone asks a clarifying question in our Google Chat | Whoever is tagged (default: owner team) | reply within 48 hours, even if the reply is "we will look at this next iteration". Send a text in the chat. |
 
 ## Definition of Ready (PBI)
 
@@ -117,7 +117,7 @@ A PBI is done, and may be moved from `Analyze` into `Done`, when:
 - The Create artifact is in the repo or linked from the issue.
 - The Observe results are recorded somewhere referenceable (notebook output, processed dataset, draft results section).
 - The Analyze writeup names a next step (continue, pivot, kill, or decompose into new PBIs).
-- A peer PO has either signed off in `#<project>-studio` or filed a Studio Critique covering it.
+- A peer PO has either signed off in our Google Chat or filed a Studio Critique covering it.
 - The card is linked under *Completed PBIs* in the next Iteration Review in `README.md`.
 
 ## Context map
