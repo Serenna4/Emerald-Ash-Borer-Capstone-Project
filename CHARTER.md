@@ -94,11 +94,11 @@ A **Service Level Agreement** is a written promise the triad makes about *how fa
 
 | When this signal arrives... | Who responds | By when |
 |-----------------------------|--------------|---------|
-| Peer PO files a **Studio Brief** (commits to `studio/briefs/...`, links in Google Chat) | Owner team | <e.g., acknowledge in Google Chat by Monday at 6pm, with a first-pass adopt / defer / decline call for each item |
-| Peer PO files a **Studio Critique** | Owner team | respond in Google Chat by Saturday at 5pm and capture follow-up items into the backlog |
-| Owner team posts an **Iteration Review** in `README.md` | Both peer POs | read before filing the next Brief and Critique. |
-| Owner team flags a **blocker** in our Google Chat | Instructor, plus any tagged peer PO | responds by the next Studio Session at the latest; faster if online. Send a text if you want feedback. |
-| Anyone asks a clarifying question in our Google Chat | Whoever is tagged (default: owner team) | reply within 48 hours, even if the reply is "we will look at this next iteration". Send a text in the chat. |
+| Peer PO files a **Studio Brief** (commits to `studio/briefs/...`, links in Google Chat) | Owner team | Acknowledge in Google Chat by Monday at 6pm, with a first-pass adopt / defer / decline call for each item |
+| Peer PO files a **Studio Critique** | Owner team | Respond in Google Chat by Saturday at 5pm and capture follow-up items into the backlog |
+| Owner team posts an **Iteration Review** in `README.md` | Both peer POs | Read before filing the next Brief and Critique. |
+| Owner team flags a **blocker** in our Google Chat | Instructor, plus any tagged peer PO | Responds by the next Studio Session at the latest; faster if online. Send a text if you want feedback. |
+| Anyone asks a clarifying question in our Google Chat | Whoever is tagged (default: owner team) | Reply within 48 hours, even if the reply is "we will look at this next iteration". Send a text in the chat. |
 
 ## Definition of Ready (PBI)
 
