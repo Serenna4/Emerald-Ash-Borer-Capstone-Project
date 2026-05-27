@@ -22,7 +22,7 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Observe:** row counts, missingness, key uniqueness, distribution sanity checks.
 - **Analyze:** decide whether the dataset survives feasibility; document in the next Iteration Review.
 - **Tag:** `M1-proposal`
-- **Size:** M
+- **Size:** Flower
 - **GitHub issue:** <link once filed>
 
 ### PBI-002
@@ -38,13 +38,34 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 
 ### PBI-003
 
-- **Title:** ...
-- **Hypothesis:** ...
-- **Create:** ...
-- **Observe:** ...
-- **Analyze:** ...
-- **Tag:** ...
-- **Size:** ...
-- **GitHub issue:** ...
+- **Title:** Finish Charter Document Touchups
+- **Hypothesis:** Review the Charter document once more on Saturday to finalize it.
+- **Create:** Review document.
+- **Observe:** Ensure no fields are empty.
+- **Analyze:** None really. Just refer back to the document to stay on track. 
+- **Tag:** M1-proposal
+- **Size:** Seed
+- **GitHub issue:** 
 
-<!-- Add more PBIs below following the same shape. -->
+### PBI-004
+
+- **Title:** Assign Directions for Each of Us
+- **Hypothesis:** directions are clear, attainable, and defined. (e.g. Brooke predicting water temperature increase with Ash trees gone)
+- **Create:** outlined research questions for each project owner in the project proposal write-up.
+- **Observe:** what data we have will determine project directions
+- **Analyze:** decide whether each direction is attainable and of equal weight, document in the next Iteration Review.
+- **Tag:** M1-proposal
+- **Size:** Seed
+- **GitHub issue:**
+
+### PBI-005
+
+- **Title:** Create Data Engineering Plan
+- **Hypothesis:**  We can state how the data will be ingested, stored, versioned, and documented.
+- **Create:** RQ statement in CHARTER.md Mission section; one-paragraph framing in the proposal draft.
+- **Observe:** Can a peer PO who has little knowledge of our data be able to follow our schema and tell how processed data is separated?
+- **Analyze:** Revise based on Studio Brief feedback.
+- **Tag:** M1-proposal
+- **Size:** Forest
+- **GitHub issue:**
+
