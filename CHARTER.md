@@ -138,6 +138,7 @@ Our project aims to add to the current knowledge within the Forestry, Conservati
 - A Studio Critique by **Wednesday / 5pm** next class (assessment of last week's delivery)
 
 ### How to reach us
-- Discord category: `#<project>-general` (day-to-day), `#<project>-studio` (Briefs and Critiques), `#<project>-blockers` (impediments)
+- Main Communication: Google Chat
+- Discord category: `#Project 21`
 - GitHub repo: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project
 - GitHub Projects board: https://github.com/users/Serenna4/projects/2
