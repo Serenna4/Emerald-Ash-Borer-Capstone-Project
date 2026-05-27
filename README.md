@@ -6,13 +6,13 @@
 
 | Field | Value |
 |-------|-------|
-| Owner team | <names> |
-| Owner Product Lead | <name> |
-| Peer Stakeholder POs | <names of your 2 or 3 peer PO individuals> |
-| Studio Session | <1, 2, or 3> |
+| Owner team | Siera Edwards and Serenna Walter |
+| Owner Product Lead | Serenna Walter |
+| Peer Stakeholder POs | Brooke Proctor, Amaya Supancich-McCord, Spencer Fiden |
+| Studio Session | 3 |
 | GitHub repo | <link to this repo> |
-| GitHub Projects board | <link> |
-| Discord category | `#<project>-*` |
+| GitHub Projects board | https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project |
+| Discord category | `#Project 21` |
 | Instructor / Sponsor | Lucas Cordova (`LucasCordova` on GitHub) |
 
 ## What this repo contains
