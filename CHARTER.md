@@ -2,23 +2,28 @@
 
 > Filled in live during the **Studio Charter** session in week 3. Every section below is committed in the same commit at the end of that class block. See [Studio Charter (single-session inception)](https://courses.lpcordova.phd/data510/project-framework/charter-inception.html) for the script and time-boxes.
 
-- **Owner team:** Siera Edwards and Serenna Walter
+- **Owner team:** Siera Edwards, Serenna Walter, and Brooke Proctor
 - **Owner Product Lead:** Serenna Walter
-- **Peer Stakeholder POs:** Brooke Proctor, Amaya Supancich-McCord, Spencer Fiden
+- **Peer Stakeholder POs:** Amaya Supancich-McCord, Spencer Fiden
 - **Instructor / Sponsor:** Lucas Cordova (`LucasCordova` on GitHub)
 - **GitHub repo:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project
 - **GitHub Projects board:** https://github.com/users/Serenna4/projects/2
 - **Discord category:** `#Project 21`
-- **Studio Session:** 3
+- **Studio Session:** 1
 - **Studio formed:** 5/25/2026
 
 ## Vision
 
-Our project aims to add to the current knowledge within the Forestry, Conservation, Ecology, and Environmental Science realms. We hope that this project could be used by government or private organizations to further prevent the spread of the Emerald Ash Borer. 
+Our project aims to add to the current knowledge within the Forestry, Conservation, Ecology, and Environmental Science realms. We were given data and some project inspiration by Meridith Greer from the City of Salem Department of Natural Resources so our goal is to contribute to their knowledge to further prevent the spread of the Emerald Ash Borer. 
 
 ## Mission
 
-We want to create an interactive map and a dashboard to show the areas most at risk of the infestions of the Emerald Ash Borer and recommend ways to prevent the spread.
+We want to create an interactive map and a dashboard to show the areas most at risk of the infestions of the Emerald Ash Borer and recommend ways to prevent the spread. 
+Research questions:
+- Can we predict which stands of trees Emerald Ash Borers are likely to infest in Salem?
+- Can we model what riparian zones along Salem’s waterways will look like in the next 5 years?
+- Can we predict how stream temperatures will be affected by a loss of Oregon Ash trees?
+
 
 ## Context
 
