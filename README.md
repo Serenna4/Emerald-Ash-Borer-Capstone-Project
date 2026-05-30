@@ -40,24 +40,38 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 4 -- Proposal milestone (M1)
 
-**Iteration ending:** <date>
+**Iteration ending:** 5/30/2026
 **Milestone tag in focus:** `M1-proposal`
 
 **Completed PBIs**
-- ...
+- Milestone One Proposal
 
 **In-flight (carrying across the boundary)**
-- ...
+- Everything Else
+- Data Cleaning
+- Select Which Datasets to Use
+- Collect Data
+- Reach out to Meridith
+- Assign Directions for Each of Us
+- Finish Charter Document Touchups
+- Aquire and Document
+- Create Data Engineering Plan
+- Draft research question and frame as a testable claim
 
 **Stakeholder response log**
 - Studio Brief from <peer PO 1>: adopted = ..., deferred = ..., declined (with reason) = ...
 - Studio Brief from <peer PO 2>: adopted = ..., deferred = ..., declined (with reason) = ...
 
 **Plan for next iteration**
-- Top PBIs (with milestone tags): ...
+- Top PBIs (with milestone tags):
+- Acquire and document (M2)
+- Reach out to Meridith
+- Move to analyze:
+    - Draft Research Question
+    - Data Engineering Plan
 
 **Risks and impediments**
-- ...
+- Need to acquire data quickly with a webscraper. May need support from Professor Cordova.
 
 ## Week 5
 
