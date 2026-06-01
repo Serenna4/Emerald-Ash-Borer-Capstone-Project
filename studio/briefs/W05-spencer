@@ -1,0 +1,35 @@
+# Studio Brief -- Week 05
+
+**From:** Spencer Fiden
+
+**To:** Emerald Ash Borer Team (Siera, Serena, Brooke)
+
+**Filed:** 05/31/2026 7:55PM
+
+**For iteration starting:** 06/01/2026
+**Milestone tag in focus:** M2-data-summary
+
+## What I want you to consider for the next iteration
+
+1. **Prioritize datasets** -- why it matters: it would be much easier clean/collect data after narrowing it down to just a few sources--creating an order for looking into your potential data sources (espeically if there are a lot of them) would help narrow it down quickly, and ideally without having to thoroughly explore your less preferred data sources if you've determined something better works.
+2. **Start documenting data** -- why it matters: going through the documentation for your final data sources will ensure you haven't overlooked anything (and make finishing the data summary easier later on). 
+3. **Keep data pipeline notes** -- why it matters: keeping a shared document with notes on data ingestion (particularly if you end up using a web scraper or API) will help all team members stay on the same page and make sure your process is reproducible. It also means it's easier to check your work if something goes wrong. 
+
+## Why now
+
+Because you've already finished M1, this is a great opportunity to get ahead of M2. These considerations are mostly focused on documentation and avoiding doing more work than necessary (not sourcing more data than needed, double checking all data sources will work, and making sure ingestion goes smoothly and can be repeated easily). 
+
+## What I am not asking for
+
+Data summary draft -- it's good to stay ahead, but I recommend you prioritize sorting out all of your datasets and ensuring they are all workable before sinking significant time into the written part of the data summary.
+
+## Suggested priority
+
+1. Prioritize datasets
+2. Start documenting data
+3. Keep data pipeline notes
+
+---
+
+> After committing this file, drop the link in `#<project>-studio` on Discord.
+> The owner team's SLA for responding to a Brief is defined in [`../../CHARTER.md`](../../CHARTER.md).
