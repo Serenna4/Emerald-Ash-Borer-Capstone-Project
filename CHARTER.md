@@ -62,23 +62,22 @@ Research questions:
 ## Success criteria by milestone
 
 - **M1, proposal (W4):**
-    - Are all of the requirements of the project proposal met?
-    - Do we have all the datasets we want to use?
-    - Do we have a rough idea of what our final is?
+    - We have a strong start on the datasets that we want to include in our project and their accessiblity status.
+    - We have a strong plan for the upcoming weeks and a clear direction of how we need to move forward.
+    - We have risks and current areas of uncertainty listed in our project as well as ways to combat them.
 - **M2, data summary (W7):**
-    - Do we know for sure what data is viable?
-    - Do we have all the data we need to answer our research question?
+    - We know what data is viable and have sorted out the data that is not accessible or relevant.
+    - We have enough data to answer our research questions. 
 - **M3, poster rough draft (W10):**
-    - Can we answer our research question with our analysis?
-    - Do we have enough of a product we can get helpful feedback from?
-    - Do we have a list of things to check off by the final draft? 
+    - Our visualizations are 80% of what we expect to have on the final draft so that we can get effective feedback.
+    - We have visualizations that begin to show how we analyzed our research questions.
+    - We have a plan for how we want to edit our visualizations in the future.
 - **M4, write-up rough draft (W12):**
-    - Do we have a list of things to check off by the final draft?
-    - Do we have a rough draft that is 80% of the length it is supposed to be?
+    - The rough draft includes clear analysis that backsup the answers of our research questions.
+    - The rough draft is at least 80% of what we expect our final draft to be.
 - **M5, final write-up and poster (W14):**
-    - Is it done?
-    - Did we practice?
-    - Did two people peer edit the write up?
+    - People are able to use our dashboard and interactive map to determine what areas in Salem are high-risk and get ideas on how to protect these areas.
+    - People are able to use our dashboard and interactive map to see what the impact would be on Salem's stream temperatures and broader environment if infestations continued as they have historically. 
 
 ## Working agreements (internal to owner team)
 
