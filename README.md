@@ -75,20 +75,29 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 5
 
-**Iteration ending:** <date>
+**Iteration ending:** 6/8/2026
 **Milestone tag in focus:** `M1-proposal` / `M2-data-summary`
 
 **Completed PBIs**
-- ...
+- Finish Charter Document Touchups
+- Draft research question and frame as a testable claim
+- Assign directions for each of us.
+- Create Data Engineering Plan
+- Set up Railway for this project
 
 **Stakeholder response log**
-- ...
+- No feedback yet. 
 
 **Plan for next iteration**
-- ...
+- Collect Data using web scrapers
+- Collect Data not needing web scrapers
+- Select Which Datasets to Use
+- Data Cleaning
+- Reach out to Meridith
+- Move data into Railway
 
 **Risks and impediments**
-- ...
+- We beileve we will have to use web scraping to gather some of the map data. So far we are having trouble with collecting the latitude an dlongitude information.
 
 ## Week 6
 
