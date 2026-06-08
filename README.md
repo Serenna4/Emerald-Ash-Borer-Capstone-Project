@@ -84,6 +84,7 @@ One subsection per class week. The owner team commits the new section **before e
 - Assign directions for each of us.
 - Create Data Engineering Plan
 - Set up Railway for this project
+- Email Meridith
 
 **Stakeholder response log**
 - No feedback yet. 
@@ -93,11 +94,10 @@ One subsection per class week. The owner team commits the new section **before e
 - Collect Data not needing web scrapers
 - Select Which Datasets to Use
 - Data Cleaning
-- Reach out to Meridith
 - Move data into Railway
 
 **Risks and impediments**
-- We beileve we will have to use web scraping to gather some of the map data. So far we are having trouble with collecting the latitude an dlongitude information.
+- We beileve we will have to use web scraping to gather some of the map data. So far we are having trouble with collecting the latitude and longitude information.
 
 ## Week 6
 
