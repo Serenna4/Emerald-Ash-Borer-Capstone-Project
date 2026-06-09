@@ -58,6 +58,11 @@ We are specifically interested in this project because the three of us grew up i
 
 **Problem statement:**
 
+Problem: Emerald Ash Borers are an invasive species that are spreading and infesting Oregon Ash Trees. These infestations eventually kill the host trees. The City of Salem doesn't know how to predict the impacts on Salem's ecosystem. 
+
+Consequences if unsolved: Beetles will infest more Ash trees which make up a portion of the canopy coverage in riperian zones. Our hypothesis is that this might lead to increased stream temperatures which may lead to a loss of biodiversity in Salem. 
+
+What success would change: By developing an interactive map and dashboard that models the beetle's effects on Salem's waterways, this project will identify at risk areas for Ash tree loss and highlight targeted preventative measures that can be taken by the City of Salem. 
 
 
 **Primary research question:**
