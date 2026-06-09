@@ -6,9 +6,9 @@
 
 | Field | Value |
 |-------|-------|
-| Owner team | Siera Edwards and Serenna Walter |
+| Owner team | Siera Edwards, Serenna Walter, and Brooke Proctor |
 | Owner Product Lead | Serenna Walter |
-| Peer Stakeholder POs | Brooke Proctor, Amaya Supancich-McCord, Spencer Fiden |
+| Peer Stakeholder POs | Amaya Supancich-McCord, Spencer Fiden |
 | Studio Session | 3 |
 | GitHub repo | https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project |
 | GitHub Projects board | https://github.com/users/Serenna4/projects/2 |
