@@ -5,7 +5,6 @@ author:
   - "Siera Edwards"
   - "Serenna Walter"
   - "Brooke Proctor"
-  - "Test Edit"
 date: today
 bibliography: refs.bib
 format:
