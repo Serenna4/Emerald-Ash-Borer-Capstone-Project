@@ -1,0 +1,232 @@
+---
+title: "Capstone Project Write-Up"
+subtitle: "Protecting Salem’s Ecosystem by Preventing the Spread of the Emerald Ash Borer"
+author:
+  - "Siera Edwards"
+  - "Serenna Walter"
+  - "Brooke Proctor"
+date: today
+bibliography: refs.bib
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+<!--
+  DATA 510 write-up skeleton (Week 5 Quarto lecture).
+
+  Copy this file to your DS3 repo:
+    deliverables/M4-writeup-draft/writeup.qmd
+
+  Week 5: paste prose from your M1 proposal into Introduction, Data, Ethics, Methods.
+  Week 7+: replace stubs with real results from notebooks/ and src/.
+  Week 12 (M4): methods and findings should be stable; render PDF + HTML for submission.
+-->
+
+# Title, Team, and Affiliations
+
+**Project title:** Protecting Salem’s Ecosystem by Preventing the Spread of the Emerald Ash Borer
+
+| Name | Role | Willamette email |
+|------|------|------------------|
+| Serenna Walter | Owner Product Lead | slthorsen@willamette.edu |
+| Siera Edwards | Predicting Tree Prevalence in Stands | smedwards@willamette.edu |
+| Brooke Proctor | Predicting Stream Temperatures | blproctor@willamette.edu |
+
+**Peer Stakeholder POs:** Amaya Supancich-McCord, Spencer Fiden
+
+**Repository:** `https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project`
+
+# Abstract
+
+*(150 to 250 words after you have results. Summarize: problem, approach, key finding, impact, limitation. Write this section last.)*
+
+# Introduction: Problem and Research Questions
+
+Our vision for this project is to help government and private organizations prevent the spread of the Emerald Ash Borer and mitigate its impact on local ecosystems. By developing an interactive map and dashboard that models the beetle’s effects on Salem’s waterways, this project will identify at-risk areas and highlight targeted preventative measures that can be taken.
+
+We are specifically interested in this project because the three of us grew up in the Willamette Valley, surrounded by nature and a curiosity for stewardship. This unification brings a personal element to the heart of the project. 
+
+**Problem statement:**
+
+
+
+**Primary research question:**
+
+1. Can we predict which stands of trees Emerald Ash Borers are likely to infest in Salem, OR?
+  - Stand: “a contiguous group of trees relatively uniform in age-class distribution, composition and structure, and growing on a site of sufficiently uniform quality, that is a distinguishable unit from adjoining areas or stands” (Mercker and Hoyt, n.d.).
+2. Can we model what the prevalence of trees in riparian zones will look like along Salem’s waterways in the next 5 years?
+  - Riparian zones: the narrow strips of land that border creeks, rivers or other bodies of water (Oregon State University, n.d.). 
+3. Can we predict how stream temperatures will be affected by a loss of Oregon Ash trees and the shade provided by them?
+
+**Secondary questions (if any):** 
+
+None.
+
+**Changes since M1 proposal:** 
+
+None yet. 
+
+# Impact and Stakeholders
+
+The results of this project will benefit the City of Salem’s Department of Natural Resources, which is a stakeholder of the project. Using these results, a more informed plan can be created by the City of Salem to protect riparian zones in Salem, along with the indigenous species that live in them. 
+
+The Shared Theme domain for our project is the Pacific Northwest forest and environmental health. Our Peer POs are looking into fire patterns in Oregon, and could support different perspectives about topics such as tree weaknesses from drought or heat, as well as heat ecology damages in general that may compound our data. This will help us think holistically about the project. 
+
+# Related Work and Background
+
+Emerald Ash Borers are pests that are native to Northern China, Russia, Japan, and Korea (USDA, 2023). These insects are highly corrosive to North American Ash Trees, and are killing trees across the United States (PennState Extension, 2025). These beetles were found in Oregon for the first time in 2022 and have been steadily increasing their lifespan as the climate changes (Boboc, 2026). This recent expansion caused Oregon to start thinking critically about readiness and response plans, including Salem’s own plan (City of Salem, 2026). 
+
+Due to the detrimental effects the Emerald Ash Borers have on tree canopies and general ecology in North America, many disciplines have become concerned and involved with finding solutions, including biologists, ecologists, land managers, engineers, and data scientists. There isn’t much existing research that is publicly findable on the intersections between data science and Emerald Ash Borers, but some papers have been published about using Geographic Information Systems to survey land and predict what areas are most likely to become infested (Huset, 2013). These seem to have very limited geographic scopes, and to the best of our knowledge, there is no existing literature on data science analysis of Emerald Ash Borers in Salem, or in the Mid-Willamette Valley specifically. 
+
+Some concerns that are highlighted within the City of Salem’s (2026) “Emerald Ash Borer Readiness and Response Plan” include riparian zone canopy reductions, climate-inspired increase in population of the Emerald Ash Borer, and threats to wildlife. Trees can become infested when they are healthy, but it is more likely if the tree has already suffered damage, such as drought or heat stress (City of Salem, 2026). Additionally, Oregon Ash trees, which are commonly found throughout Oregon, are highly susceptible to Emerald Ash Borers (Oregon Department of Forestry, 2024). Oregon Ash trees make up a portion of the canopy coverage in riparian zones; if those trees are lost in the future due to Emerald Ash Borer infestations, there will be gaps in the canopy above waterways, leading to increases in water temperatures. 
+
+
+# Data and Data Engineering
+
+Data Engineering Plan:
+
+1. Ingestion: The data will be ingested by downloading the data and using an API. 
+2. Stored: The data will be stored in the data/raw folder on the project repo. 
+3. Versioned: 
+  - data/raw/aqs/: API pulls by county FIPS and parameter code.
+  - data/raw/places/: download CSV snapshots versioned by download date.
+  - data/interim/: cleaned data, but not engineered.
+  - data/processed/: analysis-ready panel for modeling.
+  - src/ingest/aqspull.py: reproducible AQS download script.
+  - notebooks/01_panel_qc.ipynb: row counts, missingness, duplicate checks.
+4. Documented: Our data will be documented each time it is uploaded with the name, details of ingestion, and what changes or cleaning were done. 
+
+
+**Sources:**
+
+| Source | Role | Access |
+|--------|------|--------|
+| Emerald Ash Borer Web Map [1] And it’s associated data [1 a] | This map provides the latest information on survey data and areas at risk for emerald ash borer (EAB) spread and ash tree mortality. General management recommendations and quarantine restrictions are provided. Publicly Available. | Public. Web Scrape to Collect |
+| Tree Plotter [2] | This is an inventory of all trees in Oregon. This would allow us to see where Oregon Ash Trees are located. Publicly Available.  | Public data to be scraped |
+| Tree Plotter Canopy [3] | Very similar to above. Maps tree types and their locations. Only in the Salem area. Publicly Available. | Public data to be scraped, or can be downloaded using a stakeholder's login information | 
+| Oregon Department of Forestry Land Cover Willamette Valley Hardwood Model [4] | Very similar to the previous 2 data sources. Maps tree types and their locations. Publicly Available. | Public data to be scraped | 
+| Oregon EAB Trap App (PUBLIC) [5] | “ODF also coordinates a statewide trapping program for EAB with over 40 participating local agencies. The trapping season is just starting now. We have handed out over 500 traps to cooperators. They will be populating this map over the next 2-3 weeks and those updates will be live.” Publicly Available. | Public data to be scraped |
+| City of Salem Waterway Temperature (zip file) | This data comes from the City of Salem and contains information at the 15 minute level for temperatures of streams in degrees Celsius. Each stream is contained in a different .csv file.  | Publicly accessible via data requests sent to the City of Salem. We have already requested and received this. |
+
+Links to Datasets: 
+
+1. https://experience.arcgis.com/experience/9f29b1860cb04d36ad71b122148277f3/page/Page/ 
+  a. https://oregoninvasiveshotline.org/reports/list?q=Emerald+Ash+Borer&submit=Search&categories=6 
+2. https://pg-cloud.com/Oregon/ 
+3. https://pg-cloud.com/SalemOR/ 
+4. https://geo.maps.arcgis.com/apps/mapviewer/index.html?layers=565c6a9705724f0baead0c118aee9c92 
+5. https://geo.maps.arcgis.com/apps/mapviewer/index.html?webmap=cd7f5da6130749a9b7b99a45844b0f24 
+6. https://oregon-eab-geo.hub.arcgis.com/ 
+
+
+**Engineering summary:** Raw data in `data/raw/`; processed panel in `data/processed/`; ingest scripts in `src/ingest/`.
+
+```{r}
+#| label: tbl-data-qc
+#| tbl-cap: "Example QC summary (replace with your panel)"
+#| echo: true
+
+# Replace with your project data when ready:
+# panel <- readRDS(here::here("data/processed/analysis_panel.rds"))
+# nrow(panel)
+knitr::kable(data.frame(
+  check = c("Rows", "Counties", "Date range"),
+  status = c("stub", "stub", "stub")
+))
+```
+
+# Ethics and Responsible Use
+
+<!-- Paste from M1 Section 8; expand with project-specific limits. -->
+
+- **Privacy:**
+- **Fairness / equity:**
+- **Limitations of setting:**
+- **Non-causal framing:** *(if observational)*
+
+# Methods and Evaluation
+
+<!-- Paste from M1 Section 6; tighten once analysis is fixed. -->
+
+**Design:**
+
+**Primary analysis:**
+
+**Evaluation metrics:**
+
+**Train / validation / holdout:**
+
+```{r}
+#| label: fig-methods-placeholder
+#| fig-cap: "Replace with a methods diagram or exploratory plot"
+#| echo: false
+#| fig-width: 5
+#| fig-height: 3
+
+plot(1, 1, type = "n", xlab = "", ylab = "", main = "Methods figure placeholder")
+text(1, 1, "Replace after M2/M3")
+```
+
+# Results and Visualizations
+
+<!-- Fill after M2 data summary and M3 poster figures. -->
+
+*(Stub: key findings with @fig-methods-placeholder and tables.)*
+
+# Discussion, Limitations, and Future Work
+
+**Interpretation:**
+
+**Limitations:** *(tie to actual data and design)*
+
+**Future work:**
+
+# Conclusions and Recommendations
+
+*(Short, stakeholder-facing takeaways.)*
+
+# Reproducibility and References
+
+**Reproduce main results:**
+
+```bash
+cd your-repo
+quarto render deliverables/M4-writeup-draft/writeup.qmd
+```
+
+**Dependencies:** `requirements.txt` or `renv.lock` in repo root.
+
+**Data:** URLs and approval status documented in `docs/data-dictionary.md`.
+
+# References
+
+::: {#refs}
+:::
+
+<!-- Create refs.bib alongside this file. Example entries: -->
+
+<!--
+@article{liu2016,
+  title={Wildfire-specific fine particulate matter and risk of hospital admissions in urban and rural counties},
+  author={Liu, J. C. and others},
+  journal={Epidemiology},
+  year={2016}
+}
+
+@article{reid2016,
+  title={Critical review of health impacts of wildfire smoke exposure},
+  author={Reid, C. E. and others},
+  journal={Environmental Health Perspectives},
+  year={2016}
+}
+-->
