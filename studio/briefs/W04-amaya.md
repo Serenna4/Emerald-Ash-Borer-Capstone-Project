@@ -1,6 +1,6 @@
 # Studio Brief -- Week 04
 
-**From:** Amaya
+**From:** AMAYA
 **To:** Brooke, Serenna, & Siera
 **Filed:** 05/31/2026 | 11:50 AM
 **For iteration starting:** 05/25/2026
