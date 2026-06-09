@@ -1,6 +1,6 @@
-# <Project Name>
+# Protecting Salem’s Ecosystem by Preventing the Spread of the Emerald Ash Borer
 
-> One-sentence description of what this project is about. Replace this entire block before week 3.
+Analyzing the impact of Emerald Ash Borer infestations, high risk forested areas, and the impact of dying Ash Trees in Salem, OR. 
 
 ## Quick reference
 
