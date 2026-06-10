@@ -4,7 +4,7 @@ Graded milestone deliverables live here. Each one is its own folder so the sourc
 
 ```
 deliverables/
-  M1-proposal/         # Week 4: project proposal
+  M1-project-proposal/         # Week 4: project proposal
   M2-data-summary/     # Week 7: data summary
   M3-poster-draft/     # Week 10: poster rough draft
   M4-writeup-draft/    # Week 12: write-up rough draft
