@@ -42,7 +42,7 @@ execute:
 | Siera Edwards | Predicting Tree Prevalence in Stands | smedwards@willamette.edu |
 | Brooke Proctor | Predicting Stream Temperatures | blproctor@willamette.edu |
 
-**Peer Stakeholder POs:** Amaya Supancich-McCord, Spencer Fiden
+**Peer Stakeholder POs:** Amaya Supancich-McCord, Spencer Fiden 
 
 **Repository:** `https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project`
 
