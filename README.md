@@ -101,20 +101,27 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 6
 
-**Iteration ending:** <date>
+**Iteration ending:** 6/15/2026
 **Milestone tag in focus:** `M2-data-summary`
 
 **Completed PBIs**
-- ...
+- Collect Data using web scrapers
+- Collect Data not needing web scrapers
+- Select Which Datasets to Use
 
 **Stakeholder response log**
-- ...
+- No feedback yet. We will get Project Proposal Feedback in the next couple days. 
 
 **Plan for next iteration**
-- ...
+- Use feedback from Peer POs to improve Project Proposal
+- Clean all datasets 
+- Get datasets into usable formats
+- Add data files to the appropriate Github folders
+- Start filling out Data Summary Documentation
 
 **Risks and impediments**
-- ...
+- There is a risk that our data will not actually be in the format we need when we open it and start cleaning.
+- We may find that these datasets do not answer our research questions but this risk is low. If this happens, we can check out our other reserved datasets and see if they are more fitting. 
 
 ## Week 7 -- Data summary milestone (M2)
 
