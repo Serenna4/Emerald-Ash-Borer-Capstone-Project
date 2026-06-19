@@ -102,7 +102,7 @@ One subsection per class week. The owner team commits the new section **before e
 ## Week 6
 
 **Iteration ending:** 6/15/2026
-**Milestone tag in focus:** `M2-data-summary`
+**Milestone tag in focus:**  `M1-proposal` / `M2-data-summary`
 
 **Completed PBIs**
 - Collect Data using web scrapers
@@ -125,6 +125,32 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 7 -- Data summary milestone (M2)
 
+**Iteration ending:** 6/22/2026
+**Milestone tag in focus:** `M2-data-summary`
+
+**Completed PBIs**
+- Select final data sources
+- Serenna: Clean EAB data
+- Siera: Create shapefile for streams
+- Brooke: Clean temperature data
+
+**Stakeholder response log**
+- Project Proposal Feedback: We got a lot of positive feedback on our project proposal. Some critiques we want to implement include writing more contextual information about rising water temperatures and meaking a clearer data engineering design. Our peers mentioned that it was difficult to tell exactly what we are joining all our data on, however, we plan on having separate datasets for different models and not all data will be joined. 
+
+**Plan for next iteration**
+- Siera: Clean stream temperature data
+- Siera: Scrape stream location data
+- Brooke: Scrape tree data
+- Upload all cleaned data to repository
+- Upload all cleaned data to railway
+- ERD
+- Document process in data summary as rubric specifies
+
+**Risks and impediments**
+- We are at risk of running out of time to complete the data summary, EDA, and feature engineering all this week. We likely will need to move feature engineering to Week 8 where we complete the models. 
+
+## Week 8
+
 **Iteration ending:** <date>
 **Milestone tag in focus:** `M2-data-summary`
 
@@ -144,23 +170,6 @@ One subsection per class week. The owner team commits the new section **before e
 - What worked: ...
 - What did not: ...
 - One change for next iteration: ...
-
-## Week 8
-
-**Iteration ending:** <date>
-**Milestone tag in focus:** `M3-poster-draft`
-
-**Completed PBIs**
-- ...
-
-**Stakeholder response log**
-- ...
-
-**Plan for next iteration**
-- ...
-
-**Risks and impediments**
-- ...
 
 ## Week 9
 
