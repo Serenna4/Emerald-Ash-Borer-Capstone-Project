@@ -131,14 +131,14 @@ One subsection per class week. The owner team commits the new section **before e
 **Completed PBIs**
 - Select final data sources
 - Serenna: Clean EAB data
-- Siera: Create shapefile for streams
+- Siera: Clean stream temperature data
+- Siera: Clean and aggregate home density data
 - Brooke: Clean temperature data
 
 **Stakeholder response log**
 - Project Proposal Feedback: We got a lot of positive feedback on our project proposal. Some critiques we want to implement include writing more contextual information about rising water temperatures and meaking a clearer data engineering design. Our peers mentioned that it was difficult to tell exactly what we are joining all our data on, however, we plan on having separate datasets for different models and not all data will be joined. 
 
 **Plan for next iteration**
-- Siera: Clean stream temperature data
 - Siera: Scrape stream location data
 - Brooke: Scrape tree data
 - Upload all cleaned data to repository
