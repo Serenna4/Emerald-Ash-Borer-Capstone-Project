@@ -48,7 +48,7 @@ data/
 - **Ethics / consent notes:** There is no PII and no concent concerns. We are more concerned that this data may not contain the exact locations of Salem's smaller streams which is necessary for our research. 
 - **How to fetch (for a teammate cloning fresh):** Download the file from the source link. The data was last updated June 27, 2023. 
 
-### Dataset 3: Address Density
+### Dataset 3: Addresses by Zipcode
 
 - **Source:** https://data.cityofsalem.net/datasets/d686030c3b1a474bbe019320b77ce7e6_0/explore?location=44.939875%2C-123.027427%2C13 
 - **License:** This product has been prepared by Salem GIS professionals for use by Salem staff and as a reference for online users.  This product is provided as is, without warranty, for informational purposes only.  The City makes no warranty, representation, or guaranty of completeness, accuracy, content or fitness for any particular use.  Products have been prepared for specific city purposes and may not be appropriate for all other uses.  The City is not responsible for any errors, omission, or inaccuracies in the products provided. Development of derivative products is encouraged however copying and selling the data is prohibited.  The City reserves the right to discontinue availability of content at any time and for any reason.  In no event is the City of Salem liable for damages from the use of this product.  Contact the Salem IT Department for more information at gis@cityofsalem.net
@@ -59,16 +59,16 @@ data/
 - **Ethics / consent notes:** My only concern would be that some Salem residents would feel uncomfortable seeing their exact address in a project, even without any PII connected to it. To prevent any concerns in this regard, we will aggregate this data into the number of addresses in each Salem zipcode. 
 - **How to fetch (for a teammate cloning fresh):** Download the file from the source link.
 
-### Dataset 4: <name>
+### Dataset 4: Zipcode Population and Area
 
-- **Source:** <URL or contact>
-- **License:** <name and short summary>
-- **Date pulled:** <YYYY-MM-DD>
-- **Approximate size:** <rows, columns, bytes>
-- **Owner on this project:** <name>
-- **Where it lives in this repo:** `data/raw/<name>/` (gitignored) or `data/processed/<name>.csv`
-- **Ethics / consent notes:** <PII? consent process? data use agreement?>
-- **How to fetch (for a teammate cloning fresh):** <command, script, or contact>
+- **Source:** https://censusreporter.org/
+- **License:** The information is a free, open-source project. Additionally, Census data is always free and public. More information at: https://censusreporter.org/about/
+- **Date pulled:** <2026-06-25>
+- **Approximate size:** rows: 7, columns: 2
+- **Owner on this project:** Census Reporter
+- **Where it lives in this repo:**  `data/processed/zip_density.csv`
+- **Ethics / consent notes:** This data is open source and aggregated so there is no PII. 
+- **How to fetch (for a teammate cloning fresh):** Information is included in the RMarkdown and will automatically be added to the Addresses by Zipcode file. 
 
 ### Dataset 5: <name>
 
@@ -102,4 +102,3 @@ data/
 - **Where it lives in this repo:** `data/raw/<name>/` (gitignored) or `data/processed/<name>.csv`
 - **Ethics / consent notes:** <PII? consent process? data use agreement?>
 - **How to fetch (for a teammate cloning fresh):** <command, script, or contact>
-
