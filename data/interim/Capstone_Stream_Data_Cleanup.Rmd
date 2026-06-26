@@ -1,0 +1,228 @@
+---
+title: "EAB Data Cleanup"
+author: "Siera Edwards"
+date: "2026-06-16"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(readr)
+library(usmap)
+library(sf) 
+library(dplyr)
+```
+
+
+### Stream Temperature Data Cleanup and Aggregation
+
+```{r}
+ds = read_csv("Seasonal_Temp_Loggers.csv")
+
+dim(ds)
+
+head(ds)
+# starting with 589,645 rows 
+summary(ds)
+
+ds = ds %>% rename(
+  site_id = `Site ID`,
+  og_timestamp = `Timestamp (UTC-08:00)`,
+  value = Value,
+  unit = Unit,
+  creek_name = `Creek Name`
+)
+
+unique(ds$creek_name)
+unique(ds$site_id)
+
+
+
+```
+
+
+```{r}
+# add a new column for each the month/day/year value
+
+ds = ds %>% mutate(
+  month = substr(og_timestamp, 1, 2),
+  day = substr(og_timestamp, 4, 5),
+  year = substr(og_timestamp, 7, 11),
+  #date = as.Date(paste0(year, "-", month, "-", day)),
+  date = mdy(substr(og_timestamp, 1, 10))
+  )  
+
+head(ds)
+
+
+```
+
+
+```{r}
+# group by day 
+ds = ds %>% group_by(site_id,creek_name, unit, date) %>%
+  summarize(day_temp_c = mean(value)) 
+
+head(ds)
+```
+
+```{r}
+# saving file as a csv to create a new column for aggregating to the week level
+
+#write_csv(ds, "day_stream.csv")
+
+```
+
+
+```{r}
+#pull in updated file with added index column
+
+ds_day = read_csv("day_stream.csv")
+head(ds_day)
+```
+
+```{r}
+# try to aggregate to the week level using index
+
+ds_week = ds_day %>% group_by(Index, site_id, creek_name, unit) %>%
+  summarize(
+    week_temp_c = mean(day_temp_c),
+    start_week = min(date),
+    end_week = max(date)
+  )
+
+ds_week %>% select(site_id, creek_name, week_temp_c, start_week, end_week)
+
+head(ds_week)
+```
+
+```{r}
+write_csv(ds_week, "week_stream.csv")
+
+```
+
+
+### Home Address Data Cleanup and Aggregation
+
+```{r}
+ds = read_csv("salem_addresses.csv")
+head(ds)
+summary(ds)
+sum(is.na(ds$`ZIP Code`))
+```
+
+```{}
+ds %>% select(OBJECTID, ID, `Full Address`, `County Name`, `ZIP Code`, `LAST_EDITED_DATE`)
+write_csv(ds, "original_salem_addresses.csv")
+```
+
+```{r}
+# select only relevant columns for aggregation
+
+ds = ds %>% group_by(`ZIP Code`) %>%
+  summarize(
+    count_address = n()
+  ) %>%
+  rename(zip_code = `ZIP Code`)
+
+ds
+
+```
+
+```{r}
+# add zipcode population and area values from the 2024 census
+zip_code = c(97301, 97302, 97303, 97304, 97305, 97306, 97317)
+population = c(57574, 40799, 40659, 34879, 45083, 34383, 25966)
+squared_miles = c(11.3, 23.4, 24.9, 56.8, 47.2, 32.4, 55.2)
+
+
+zip_data = data.frame(
+  zip_code = zip_code,
+  population = population,
+  squared_miles = squared_miles
+)
+
+ds = ds %>%
+  left_join(zip_data)
+
+ds = ds %>% mutate(
+  address_density_mile = count_address/squared_miles
+)
+
+ds
+```
+
+
+
+```{r}
+write_csv(ds, "zip_density.csv")
+
+```
+
+
+### Stream Location Data Cleanup
+
+
+```{r}
+stream <- st_read("Public_Storm_Creeks_and_Rivers_4477802176423454413/Public_Storm_Creeks_and_Rivers.shp")
+
+head(stream)
+st_crs(stream)
+stream = st_transform(stream, 4326)
+
+```
+
+
+```{r}
+stream = stream %>% select(UNITID, UNITID2, NAME, UNITTYPE, STATUS, PWGRID, GLOBALID, FLOWDIRECT, geometry)
+
+
+```
+
+
+```{r}
+# Riparian hardwoods --> space around rivers
+stream %>% 
+  ggplot() + 
+  geom_sf(color = "black") + 
+  coord_sf(xlim = c(-123.18, -122.85), 
+           ylim = c(44.83, 45.06),
+           datum = sf::st_crs(4326)) +
+  theme_minimal()
+
+```
+
+```{}
+my_points = tree data
+
+# 1. Load your datasets
+# (Assuming 'my_points' is your points dataset and 'stream' is your stream shapefile)
+# Note: They MUST be in the exact same Coordinate Reference System (CRS) for this to work.
+
+# 2. Project them to a local coordinate system (Meters or Feet)
+# Avoid using EPSG:4326 (lat/lon) here, as calculating distances in degrees is highly inaccurate.
+# Instead, project to a system like UTM or a local State Plane.
+target_crs <- 32610  # Example UTM Zone 10N (used for the US West Coast)
+
+points_proj <- st_transform(my_points, target_crs)
+stream_proj <- st_transform(stream, target_crs)
+
+# 3. Calculate the distance matrix
+# This creates a huge table where rows are points and columns are streams
+dist_matrix <- st_distance(points_proj, stream_proj)
+
+# 4. Extract the distance to the *nearest* stream for each point
+# '1' tells apply to look row-by-row (for each point) and find the minimum value
+my_points$distance_to_stream <- apply(dist_matrix, 1, min)
+
+head(my_points)
+```
+
+
+
+
