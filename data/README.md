@@ -39,14 +39,14 @@ data/
 
 ### Dataset 2: Stream Location Data
 
-- **Source:** https://geohub.oregon.gov/datasets/oregon-geo::historic-vegetation/explore?location=44.114174%2C-120.514863%2C7&showTable=true
-- **License:** CC0 1.0 License: The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
-- **Date pulled:** <2026-06-22>
-- **Approximate size:** shapefile, rows: 43,628, columns: 2, bytes: 150,272 KB
-- **Owner on this project:** State of Oregon, hosted on GEOHub Data
-- **Where it lives in this repo:** Currently the file is too large to be hosted on Github. 
-- **Ethics / consent notes:** There is no PII and no concent concerns. We are more concerned that this data may not contain the exact locations of Salem's smaller streams which is necessary for our research. 
-- **How to fetch (for a teammate cloning fresh):** Download the file from the source link. The data was last updated June 27, 2023. 
+- **Source:** https://data.cityofsalem.net/datasets/073807388cb64c828a43897933e770ce/explore?location=44.926409%2C-122.919209%2C10&showTable=true
+- **License:** Custom License: The data in SalemMaps Online has been prepared for use by GIS professionals and as a reference map for online users. For official City of Salem information and maps, please go to https://www.cityofsalem.net This product is provided as is, without warranty. In no event is the City of Salem liable for damages from the use of this product. The data in this product is subject to license and copyright limitations and further distribution or resale is governed by licensing restrictions. Contact the Salem IT Department for more information at gis@cityofsalem.net
+- **Date pulled:** <2026-06-26>
+- **Approximate size:** shapefile, rows: 2,672, columns: 24, bytes: 619 KB
+- **Owner on this project:** City of Salem, Oregon
+- **Where it lives in this repo:**  `data/processed/Public_Storm_Creeks_and_Rivers_4477802176423454413.zip`
+- **Ethics / consent notes:** There is no PII and no concent concerns.
+- **How to fetch (for a teammate cloning fresh):** Download the file from the source link. The data was last updated May 30, 2026. 
 
 ### Dataset 3: Addresses by Zipcode
 
