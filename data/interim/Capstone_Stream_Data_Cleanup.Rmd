@@ -107,7 +107,7 @@ write_csv(ds_week, "week_stream.csv")
 ```
 
 
-### Home Address Data Cleanup and Aggregation
+### Address Data Cleanup and Aggregation
 
 ```{r}
 ds = read_csv("salem_addresses.csv")
@@ -180,8 +180,14 @@ stream = st_transform(stream, 4326)
 
 ```{r}
 stream = stream %>% select(UNITID, UNITID2, NAME, UNITTYPE, STATUS, PWGRID, GLOBALID, FLOWDIRECT, geometry)
+ 
+st_write(stream, "creek_locations.shp")
 
+#stream %>% group_by(NAME) %>%
+#  summarize(n=n())
 
+#stream
+#2672
 ```
 
 
@@ -223,6 +229,21 @@ my_points$distance_to_stream <- apply(dist_matrix, 1, min)
 head(my_points)
 ```
 
+### Weather Data Cleaning
+
+```{r}
+library(tidyverse)
+
+all=read_csv('USW00024232.csv')
+
+ds=all%>%select('STATION','NAME','LATITUDE','LONGITUDE','ELEVATION','DATE','AWND','PRCP','SNOW','SNWD','TMAX','TMIN')
+
+ds=ds%>%filter_at(vars(TMAX, TMIN), all_vars(!is.na(.)))
+
+ds=ds%>%mutate(TAVG=(TMIN+TMAX)/2)
+
+write_csv(ds, "temp_clean.csv")
+```
 
 
 
