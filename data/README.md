@@ -70,35 +70,35 @@ data/
 - **Ethics / consent notes:** This data is open source and aggregated so there is no PII. 
 - **How to fetch (for a teammate cloning fresh):** Information is included in the RMarkdown and will automatically be added to the Addresses by Zipcode file. 
 
-### Dataset 5: <name>
+### Dataset 5: EAB Infestation Areas
 
-- **Source:** <URL or contact>
-- **License:** <name and short summary>
-- **Date pulled:** <YYYY-MM-DD>
+- **Source:** https://experience.arcgis.com/experience/9f29b1860cb04d36ad71b122148277f3/page/Page
+- **License:** This work is licensed under CC BY-SA 4.0
+- **Date pulled:** 2026-06-28
 - **Approximate size:** <rows, columns, bytes>
-- **Owner on this project:** <name>
-- **Where it lives in this repo:** `data/raw/<name>/` (gitignored) or `data/processed/<name>.csv`
-- **Ethics / consent notes:** <PII? consent process? data use agreement?>
-- **How to fetch (for a teammate cloning fresh):** <command, script, or contact>
+- **Owner on this project:** Oregon Department of Forestry
+- **Where it lives in this repo:** `data/raw/eab.csv/`
+- **Ethics / consent notes:** Since we are only collecting the EAB infestation zones, there is no PII in this data. This is also public information so it can be shared freely. 
+- **How to fetch (for a teammate cloning fresh):** Access through the script to web scrape the data or through the file in the `data/raw/eab.csv/`
 
-### Dataset 6: <name>
+### Dataset 6: Tree Plotter
 
-- **Source:** <URL or contact>
-- **License:** <name and short summary>
-- **Date pulled:** <YYYY-MM-DD>
-- **Approximate size:** <rows, columns, bytes>
-- **Owner on this project:** <name>
-- **Where it lives in this repo:** `data/raw/<name>/` (gitignored) or `data/processed/<name>.csv`
-- **Ethics / consent notes:** <PII? consent process? data use agreement?>
-- **How to fetch (for a teammate cloning fresh):** <command, script, or contact>
+- **Source:** https://pg-cloud.com/Oregon/
+- **License:** The Oregon Department of Forestry’s Urban and Community Forestry Program has made the TreePlotter inventory and canopy assessment tools available for use at no cost to community partners throughout the state.
+- **Date pulled:** <YYYY-MM-DD> (not pulled yet)
+- **Approximate size:** rows: , columns: , bytes: 
+- **Owner on this project:** Oregon Department of Forestry
+- **Where it lives in this repo:** `data/raw/tree.csv/` 
+- **Ethics / consent notes:** This information is publicly available and contains no PII. It is clear that this data is free to use for projects so there are not use agreements. 
+- **How to fetch (for a teammate cloning fresh):** Data was scraped using a web scraping script. 
 
-### Dataset 7: <name>
+### Dataset 7: Weather Data
 
-- **Source:** <URL or contact>
-- **License:** <name and short summary>
-- **Date pulled:** <YYYY-MM-DD>
-- **Approximate size:** <rows, columns, bytes>
-- **Owner on this project:** <name>
-- **Where it lives in this repo:** `data/raw/<name>/` (gitignored) or `data/processed/<name>.csv`
-- **Ethics / consent notes:** <PII? consent process? data use agreement?>
-- **How to fetch (for a teammate cloning fresh):** <command, script, or contact>
+- **Source:** https://www.ncdc.noaa.gov/cdo-web/search;jsessionid=8DC3FCE6E9A0F7A195852DFB26D8632A
+- **License:** License information is not readily available on the website however the data is openly available and is meant for use by researchers. 
+- **Date pulled:** 2026-06-14
+- **Approximate size:** rows: 48603, columns: 18, bytes: 15.1 MB
+- **Owner on this project:** NOAA, USA.gov
+- **Where it lives in this repo:** `data/raw/USW00024232.csv/` 
+- **Ethics / consent notes:** This information is public and contains no PII. This can be used openly. 
+- **How to fetch (for a teammate cloning fresh):** Data can be downloaded from the source url or be found in `data/raw/USW00024232.csv/` 
