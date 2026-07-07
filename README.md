@@ -151,42 +151,65 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 8
 
-**Iteration ending:** <date>
+**Iteration ending:** 6-29-26
 **Milestone tag in focus:** `M2-data-summary`
 
 **Completed PBIs**
-- ...
+- Siera: Scrape stream location data
+- Brooke: Scrape tree data
+- Upload all cleaned data to repository
+- Upload all cleaned data to railway
+- ERD
+- Document process in data summary as rubric specifies
 
 **Stakeholder response log**
-- ...
+- NA
 
 **Plan for next iteration**
-- ...
+- Plan New Project Direction
+- Amended Project Proposal
+- Amnded Data Summary
+- Download and EDA on Dr. Gore's data
+- RQ#1 Model Created
+- RQ#2 Model Created
+- RQ#3 Model Created
 
 **Risks and impediments**
-- ...
+- This is a lot of work to complete in a week and we are worried that our new direction is not really significant enough yet. We are all very busy and worried about time constraints
 
 **Retrospective (milestone boundary)**
-- What worked: ...
-- What did not: ...
-- One change for next iteration: ...
+- What worked: Speaking with experts gives us a better insight into how to proceed. 
+- What did not: Our previous data was unable to answer our questions 
+- One change for next iteration: We are completely changing our project idea and adjusting our research question to be answerable with our data. 
 
 ## Week 9
 
-**Iteration ending:** <date>
+**Iteration ending:** 7-6-2026
 **Milestone tag in focus:** `M3-poster-draft`
 
 **Completed PBIs**
-- ...
+- Plan New Project Direction
+- Amended Project Proposal
+- Amnded Data Summary
+- Download and EDA on Dr. Gore's data
+- RQ#2 Model Created
+- RQ#3 Model Created
 
 **Stakeholder response log**
-- ...
+- NA
 
 **Plan for next iteration**
-- ...
+- RQ#1 Model Created
+- RQ#4 Model Created
+- Create Grafana Dashboard with Key Insights
+- Create Graphs necessary for Poster
+- Very Rough Poster Draft
+- Write Project Abstract
 
 **Risks and impediments**
-- ...
+- We are worried that the models will not be significant and won't be able to show prominent relationships
+- Our canopy coverage data is not very extensive so we are worried it won't show clear impacts.
+- Our RQ#4 is very dependent on the use of extrapolated data for predictions so we worry that the model will not be accurate. We will document potential concerns as we proceed. 
 
 ## Week 10 -- Poster rough-draft milestone (M3)
 
