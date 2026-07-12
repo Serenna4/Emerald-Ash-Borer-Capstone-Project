@@ -28,14 +28,14 @@ data/
 
 ### Dataset 1: Stream Temperature Data
 
-- **Source:** Sent to us by Meredith from the City of Salem 
-- **License:** CC0 1.0 License: The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
-- **Date pulled:** <2026-05-27>
-- **Approximate size:** rows: 589,645, columns: 5, bytes: 25,653 KB
-- **Owner on this project:** City of Salem
-- **Where it lives in this repo:** `data/processed/Seasonal_Temp_Loggers.csv`
-- **Ethics / consent notes:** There is no PII and no consert concerns. We should be wary that this data only spans from  2018-05-01 to 2022-10-04 and that we should be cautious extrapolating any findings outside of this time range. 
-- **How to fetch (for a teammate cloning fresh):** Contact Meredith Greer at <MGreer@cityofsalem.net>
+- **Source:** Sent to us by Dr. Gore from Willamette University. Data collection project launched in 2025 by CastawayWU.
+- **License:** Available by request.
+- **Date pulled:** <2026-06-29>
+- **Approximate size:** rows: 7,543, columns: 5, bytes: 426 KB
+- **Owner on this project:** CastawayWU
+- **Where it lives in this repo:** `data/raw/ds_daily.csv`
+- **Ethics / consent notes:** There is no PII and no consert concerns. We should be wary that this data only spans from  014-12-31 to 2025-6-4 and that we should be cautious extrapolating any findings outside of this time range. 
+- **How to fetch (for a teammate cloning fresh):** Contact CastawayWU at from their contact page on the source link.
 
 ### Dataset 2: Stream Location Data
 
