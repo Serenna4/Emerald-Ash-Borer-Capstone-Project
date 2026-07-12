@@ -28,7 +28,7 @@ data/
 
 ### Dataset 1: Stream Temperature Data
 
-- **Source:** Sent to us by Dr. Gore from Willamette University. Data collection project launched in 2025 by CastawayWU.
+- **Source:** Sent to us by Dr. Gore from Willamette University. Data collection project launched in 2025 by CastawayWU. https://sites.google.com/willamette.edu/castaway-club/mill-creek-research-project
 - **License:** Available by request.
 - **Date pulled:** <2026-06-29>
 - **Approximate size:** rows: 7,543, columns: 5, bytes: 426 KB
@@ -48,51 +48,7 @@ data/
 - **Ethics / consent notes:** There is no PII and no concent concerns.
 - **How to fetch (for a teammate cloning fresh):** Download the file from the source link. The data was last updated May 30, 2026. 
 
-### Dataset 3: Addresses by Zipcode
-
-- **Source:** https://data.cityofsalem.net/datasets/d686030c3b1a474bbe019320b77ce7e6_0/explore?location=44.939875%2C-123.027427%2C13 
-- **License:** This product has been prepared by Salem GIS professionals for use by Salem staff and as a reference for online users.  This product is provided as is, without warranty, for informational purposes only.  The City makes no warranty, representation, or guaranty of completeness, accuracy, content or fitness for any particular use.  Products have been prepared for specific city purposes and may not be appropriate for all other uses.  The City is not responsible for any errors, omission, or inaccuracies in the products provided. Development of derivative products is encouraged however copying and selling the data is prohibited.  The City reserves the right to discontinue availability of content at any time and for any reason.  In no event is the City of Salem liable for damages from the use of this product.  Contact the Salem IT Department for more information at gis@cityofsalem.net
-- **Date pulled:** <2026-06-23>
-- **Approximate size:** rows: 93,164, columns: 44, bytes: 31,582 KB
-- **Owner on this project:** City of Salem Oregon GIS
-- **Where it lives in this repo:** Currently the file is too large to be hosted on Github. 
-- **Ethics / consent notes:** My only concern would be that some Salem residents would feel uncomfortable seeing their exact address in a project, even without any PII connected to it. To prevent any concerns in this regard, we will aggregate this data into the number of addresses in each Salem zipcode. 
-- **How to fetch (for a teammate cloning fresh):** Download the file from the source link.
-
-### Dataset 4: Zipcode Population and Area
-
-- **Source:** https://censusreporter.org/
-- **License:** The information is a free, open-source project. Additionally, Census data is always free and public. More information at: https://censusreporter.org/about/
-- **Date pulled:** <2026-06-25>
-- **Approximate size:** rows: 7, columns: 2
-- **Owner on this project:** Census Reporter
-- **Where it lives in this repo:**  `data/processed/zip_density.csv`
-- **Ethics / consent notes:** This data is open source and aggregated so there is no PII. 
-- **How to fetch (for a teammate cloning fresh):** Information is included in the RMarkdown and will automatically be added to the Addresses by Zipcode file. 
-
-### Dataset 5: EAB Infestation Areas
-
-- **Source:** https://experience.arcgis.com/experience/9f29b1860cb04d36ad71b122148277f3/page/Page
-- **License:** This work is licensed under CC BY-SA 4.0
-- **Date pulled:** 2026-06-28
-- **Approximate size:** <rows, columns, bytes>
-- **Owner on this project:** Oregon Department of Forestry
-- **Where it lives in this repo:** `data/raw/eab.csv/`
-- **Ethics / consent notes:** Since we are only collecting the EAB infestation zones, there is no PII in this data. This is also public information so it can be shared freely. 
-- **How to fetch (for a teammate cloning fresh):** Access through the script to web scrape the data or through the file in the `data/raw/eab.csv/`
-
-### Dataset 6: Tree Plotter
-
-- **Source:** https://pg-cloud.com/Oregon/
-- **License:** The Oregon Department of Forestry’s Urban and Community Forestry Program has made the TreePlotter inventory and canopy assessment tools available for use at no cost to community partners throughout the state.
-- **Date pulled:** <YYYY-MM-DD> (not pulled yet)
-- **Approximate size:** rows: , columns: , bytes: 
-- **Owner on this project:** Oregon Department of Forestry
-- **Where it lives in this repo:** `data/raw/tree.csv/` 
-- **Ethics / consent notes:** This information is publicly available and contains no PII. It is clear that this data is free to use for projects so there are not use agreements. 
-- **How to fetch (for a teammate cloning fresh):** Data was scraped using a web scraping script. 
-
-### Dataset 7: Weather Data
+### Dataset 3: Weather Data
 
 - **Source:** https://www.ncdc.noaa.gov/cdo-web/search;jsessionid=8DC3FCE6E9A0F7A195852DFB26D8632A
 - **License:** License information is not readily available on the website however the data is openly available and is meant for use by researchers. 
