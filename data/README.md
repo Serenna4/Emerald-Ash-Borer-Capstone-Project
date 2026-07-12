@@ -57,4 +57,15 @@ data/
 - **Owner on this project:** NOAA, USA.gov
 - **Where it lives in this repo:** `data/raw/USW00024232.csv/` 
 - **Ethics / consent notes:** This information is public and contains no PII. This can be used openly. 
-- **How to fetch (for a teammate cloning fresh):** Data can be downloaded from the source url or be found in `data/raw/USW00024232.csv/` 
+- **How to fetch (for a teammate cloning fresh):** Data can be downloaded from the source url or be found in `data/raw/USW00024232.csv/`
+
+### Datset 4: Tree Canopy Data
+
+- **Source:** https://pg-cloud.com/SalemOR/ 
+- **License:** License information is not readily available on the website. However, maps are publically available on the website. To download the data, reach out to Natural Resources at City of Salem. 
+- **Date pulled:** 2026-06-10
+- **Approximate size:** rows: 3,649, columns: 18, bytes: 3,184 KB
+- **Owner on this project:** City of Salem
+- **Where it lives in this repo:** `data/raw/raw_urban_tree_canopy.shp/` 
+- **Ethics / consent notes:** This information is public and contains no PII. This can be used openly. 
+- **How to fetch (for a teammate cloning fresh):** Data can be requested from City of Salem and downloaded with stakeholder's login information.
