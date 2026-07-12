@@ -204,7 +204,6 @@ One subsection per class week. The owner team commits the new section **before e
 - Create Grafana Dashboard with Key Insights
 - Create Graphs necessary for Poster
 - Very Rough Poster Draft
-- Write Project Abstract
 
 **Risks and impediments**
 - We are worried that the models will not be significant and won't be able to show prominent relationships
@@ -213,25 +212,37 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 10 -- Poster rough-draft milestone (M3)
 
-**Iteration ending:** <date>
+/**Iteration ending:** 7-13-26
 **Milestone tag in focus:** `M3-poster-draft`
 
 **Completed PBIs**
-- ...
+- RQ#1 Model Recreated
+- RQ#2 Model Recreated
+- RQ#3 Model Recreated
+- RQ#4 Model Recreated
+- Amended Project Proposal
+- Amnded Data Summary
+- Very Rough Poster Draft
+
 
 **Stakeholder response log**
-- ...
+- None
 
 **Plan for next iteration**
-- ...
+- Create Descriptive Analysis Graphs (DO vs Stream temp, Stream temp rise)
+- Create Descriptive Analysis Metrics (Stream temp and tree canopy correlation, Stream temp and weather correlation)
+- Write updated Results and Discussion section on Poster Rough Draft and Resubmit
+- Begin Write-Up
+- Implement any stakeholder feedback on Poster Draft
 
 **Risks and impediments**
-- ...
+- Because of Poster Rough Draft is not fully completed we worry that we may not get as much feedback on it as we would like.
+- We are worried that we are still behind (even though we are making great progress to catch up)
 
 **Retrospective (milestone boundary)**
-- What worked: ...
-- What did not: ...
-- One change for next iteration: ...
+- What worked: Brainstorming how our graphs will connect with our research question before creating them. Splitting the models by year but combining the sites. 
+- What did not: Pushing forward blindly without having a distinct plan of how graphs will relate to our final message. 
+- One change for next iteration: We may adjust our research question to better fit with the work we are doing. We will continue to push until we are caught up. 
 
 ## Week 11
 
