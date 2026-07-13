@@ -55,9 +55,9 @@ data/
 - **Date pulled:** 2026-06-14
 - **Approximate size:** rows: 48603, columns: 18, bytes: 15.1 MB
 - **Owner on this project:** NOAA, USA.gov
-- **Where it lives in this repo:** `data/raw/USW00024232.csv/` 
+- **Where it lives in this repo:** `data/raw/4346262.csv/` 
 - **Ethics / consent notes:** This information is public and contains no PII. This can be used openly. 
-- **How to fetch (for a teammate cloning fresh):** Data can be downloaded from the source url or be found in `data/raw/USW00024232.csv/`
+- **How to fetch (for a teammate cloning fresh):** Data can be downloaded from the source url or be found in `data/raw/4346262.csv/`
 
 ### Datset 4: Tree Canopy Data
 
