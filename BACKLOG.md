@@ -33,8 +33,8 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Observe:** can a peer PO who has never seen the project repeat the question back accurately?
 - **Analyze:** revise based on Studio Brief feedback.
 - **Tag:** `M1-proposal`
-- **Size:** S
-- **GitHub issue:** <link once filed>
+- **Size:** Flower
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/2 
 
 ### PBI-003
 
@@ -45,7 +45,7 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Analyze:** None really. Just refer back to the document to stay on track. 
 - **Tag:** M1-proposal
 - **Size:** Seed
-- **GitHub issue:** 
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/3
 
 ### PBI-004
 
@@ -56,7 +56,7 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Analyze:** decide whether each direction is attainable and of equal weight, document in the next Iteration Review.
 - **Tag:** M1-proposal
 - **Size:** Seed
-- **GitHub issue:**
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/4
 
 ### PBI-005
 
@@ -67,5 +67,16 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Analyze:** Revise based on Studio Brief feedback.
 - **Tag:** M1-proposal
 - **Size:** Forest
-- **GitHub issue:**
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/5
+
+### PBI-006
+
+- **Title:** Reach out to Meredith
+- **Hypothesis:** We can send Meredith an email and hear back within a reasonable amount of time.
+- **Create:** An email to Meredith asking about what would be a good timeline to look at prediciting stream temperature and tree loss in Salem for budgeting and planning.
+- **Observe:** What is the best timeline we should use for our project? 2 years? 5 years? 10 years?
+- **Analyze:** Decide what timeline to use.
+- **Tag:** M1-proposal
+- **Size:** Seed
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/6
 
