@@ -223,23 +223,113 @@ https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/23
 
 ### PBI-022
 
+Title: Select Best Datasets
+Hypothesis: We can select a subset of our datasets to accommodate our research question.
+Create: Download all datasets necessary, about 3-5.
+Observe: We can successfully read (human) all of the datasets after the download.
+Analyze: We can ensure all of our research question needs are covered by the selected data.
+Tag: M2-data summary
+Size: Flower
+github issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/24
+
 ### PBI-023
+
+Title: Collect zip-code density data
+Hypothesis: If I can gather information on the population density by zip-code, this could be an important feature to use in our models.
+Create: Scrape or download a dataset on zip-code density data
+Observe: Review the data to ensure it aligns with our purpose.
+Analyze: Perform any necessary data cleaning and move the data into our github and railway account.
+Tag: M2-Data Summary
+Size: Tree
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/25
 
 ### PBI-024
 
+Title: Regression Model for stream temps using weather and canopy coverage (RQ#4)
+Hypothesis: We can create a regresison model that uses historical stream data, weather data, and canopy coverage data to make the model even more accurate.
+Create: Multiple regression models for each year in 2020, 2022, and 2024.
+Observe: We will evaluate this model using RMSE, MAE, cross validation, and R^2.
+Analyze: We will use our metrics to determine if the model is better or worse than the previous ones. We will check in with our Peer POs to do a sanity check on the results.
+Tag: M3-Poster rough draft
+Size: Forest
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/27
+
 ### PBI-025
+
+Title: Create Poster Rough Draft
+Hypothesis: We can create a first draft of our poster using the template provided by Prof. Cordova.
+Create: We can fill in every setion with either the appropriate text/visualizations or we can fill in the sections with the anticipated information if analysis is not completed.
+Observe: We will evaluate the format, context, and organization of the poster to determine what we want to change for the final draft.
+Analyze: We will have our Peer POs evaluate the poster draft and incorporate any feedback into our final draft plans.
+Tag: M3-Poster rough draft
+Size: Forest
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/28
 
 ### PBI-026
 
+Title: Write-up First Draft
+Hypothesis: We can create a first-draft of our write up summarizing our methods and findings.
+Create: We will create a rough draft of the write up for feedback.
+Observe: We will review the document to find areas for improvement for the final version
+Analyze: We will ask our Peer POs to review the document to suggest any improvements for the final version
+Tag: M4-Write-up Draft
+Size: Forest
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/29
+
 ### PBI-027
+
+Title: Create Final Poster Iteration
+Hypothesis: We can use previous feedback to improve and polish our final version of the poster.
+Create: Add and modify any sections of the poster that need it.
+Observe: Make sure the poster is polished and presentation-ready. Ensure text is readable
+Analyze: Make sure the story flows on the poster and is easy to understand and follow.
+Tag: M5-Final Submission
+Size: Tree
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/30
 
 ### PBI-028
 
+Title: Create Final Write-Up Iteration
+Hypothesis: We can use previous feedback to improve and polish our final version of the write-up.
+Create: Add and modify any sections of the write-up that need it. Save the final version in Github
+Observe: Make sure the write-up is polished and accurate.
+Analyze: Have others peer-edit our write-up to ensure it is easy to understand and follow.
+Tag: M5-Final Submission
+Size: Tree
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/31
+
 ### PBI-029
+
+Title: Github Touch Ups
+Hypothesis: We will fill in any overlooked areas of documentation in the Github
+Create: We will review the entire Github project and ensure all documentation is filled out and necessary files are included.
+Observe: We will explore the github to find any areas missing information.
+Analyze: N/A
+Tag: M5-Final Submission
+Size: Tree
+Github Issue:  https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/32
 
 ### PBI-030
 
+Title: Amend Project Proposal
+Hypothesis: We have changed the trajectory of our project so we should write another project proposal for consistency.
+Create: We will create a new project proposal that amends the original one to align with our new project direction.
+Observe: We will ensure the new adjustments align with our new project goals to keep us on track and for clarity in the future.
+Analyze: We will have peer POs review the project proposal to bring up any other concerns.
+Tag: M1-Project proposal
+Size: Tree
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/33
+
 ### PBI-031
+
+Title: Amend Data Summary
+Hypothesis: After adjusting our project proposal, we want to adjust the data summary since our data sources have also changed in our pivot.
+Create: Edit the data summary to reflect new changes in our project trajectory
+Observe: Ensure the new data summary is accurate and sets us up for success by organizing how all data connects and related to each other.
+Analyze: Have peer POs and our experts review the new plan and data summary to bring up any new concerns early.
+Tag: M2-Data summary
+Size: Flower
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/34
 
 ### PBI-032
 
