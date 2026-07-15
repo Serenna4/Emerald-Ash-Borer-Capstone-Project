@@ -14,4 +14,5 @@ Status: Complete. Needs peer review.
 * Regression model for stream temp and canopy coverage (RQ3)
 * Machine learning model for predicting stream temps using historical data and weather data (RQ2)
 * Machine learning model for stream temperature for each year (RQ1)
-* Create Poster ROugh Draft
+* Create Model Graphics
+* Create Poster Rough Draft
