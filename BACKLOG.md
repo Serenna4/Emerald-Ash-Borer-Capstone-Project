@@ -80,3 +80,14 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Size:** Seed
 - **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/6
 
+### PBI-007
+
+- **Title:** Collect Data
+- **Hypothesis:** We can dowload the data either directly or with an API to have usable data for our project.
+- **Create:** Finished uploaded raw data in our repo that is sorted to only include the data we will use in our project.
+- **Observe:** We can ensure that the datasets are populated:
+- **Analyze:** We ensure there are no apparent discrepancies.
+- **Tag:** M2-data summary
+- **Size:** Tree
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/7
+
