@@ -10,3 +10,8 @@ Status: Complete. Needs peer review.
 
 ## PBIs Related to Milestone
 
+* Regression model for stream temps using weather and canopy coverage (RQ4)
+* Regression model for stream temp and canopy coverage (RQ3)
+* Machine learning model for predicting stream temps using historical data and weather data (RQ2)
+* Machine learning model for stream temperature for each year (RQ1)
+* Create Poster ROugh Draft
