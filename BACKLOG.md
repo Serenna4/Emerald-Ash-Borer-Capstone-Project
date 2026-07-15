@@ -156,3 +156,95 @@ Analyze: Do our model’s validation tests (R^2, RMSE, MAE, and cross-validation
 Tag: M3-Poster rough draft
 Size: Forest
 Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/13
+
+### PBI-014
+
+Title: Create Exploratory Data Analysis Visualizations
+Hypothesis: We can create 2 graphs to showcase the trends in the data and the impact of rising stream temps.
+Create: One graph showing the stream temp change by season from 2016 to 2024. And another graph showing the relationship between stream temperature and dissolved oxygen in streams.
+Observe: We will observe the graphs and perform and polishing to get them publish ready.
+Analyze: These graphs will help tell the story of our project and its impact. We will ask our Peer POs to review these graphs and ensure they support our message as we intend.
+Tag: M3-Poster rough draft
+Size: Tree
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/14
+
+### PBI-015
+
+Title: Create Model Graphics
+Hypothesis: We can create graphics regarding our models to demonstrate how we picked the best model and what values were most important to it.
+Create: We can create graphs for each research question showing which model performed the best using our evaluation metrics. We can also create a graph showing the primary variables being used in the models for the highest performing models.
+Observe: We will make sure these graphs are publish ready and support our story.
+Analyze: We will ask our Peer POs to give us feedback on the graphs for a sanity check and to make sure they work well with the rest of our material
+Tag: M3-Poster rough draft
+Size: Tree
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/15
+
+### PBI-016
+
+Title: Add Data We Have to Repo (Small Part of Collect Data Task)
+Hypothesis: Broken up part of collecting data. We have some data, add it to the repository.
+Create: Finished downloaded and uploaded raw data in our repo that we already have linked.
+Observe: We can successfully download the data sources we have.
+Analyze: We ensure there are no apparent discrepancies in our current sources.
+Tag: M2-data summary
+Size: Flower
+GitHub issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/16
+
+### PBI-017
+
+Title: Scrape Shapefile for Streams
+Hypothesis: We can create a custom shapefile from a map of the streams included in the stream data we received from the city of Salem
+Create: A shapefile of the stream locations to be used in predicting tree risk, prevalence, and stream temp.
+Observe: row counts, missingness, key uniqueness. Ensure that we can combine it with stream temp data.
+Analyze: decide whether the dataset survives feasibility; document in the next Iteration Review.
+Size: Tree
+Github issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/17
+
+### PBI-018
+
+Receive template from Cordova for tree scraping at the weekly level
+Acquire and clean the data
+Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/18
+
+### PBI-019
+
+Remove false identifications from the dataset
+https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/19
+
+### PBI-020
+
+Aggregate stream temperatures to the weekly level
+https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/20
+
+### PBI-021
+
+Select weather station and relevant weather columns
+https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/23
+
+### PBI-022
+
+### PBI-023
+
+### PBI-024
+
+### PBI-025
+
+### PBI-026
+
+### PBI-027
+
+### PBI-028
+
+### PBI-029
+
+### PBI-030
+
+### PBI-031
+
+### PBI-032
+
+### PBI-033
+
+### PBI-034
+
+### PBI-035
