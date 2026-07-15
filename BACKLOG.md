@@ -91,3 +91,14 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Size:** Tree
 - **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/7
 
+### PBI-008
+
+- **Title:** Select Which Datasets to Use
+- **Hypothesis:** We can select some of the datasets to use, based on feedback from Professor Cordova and our Peer POs to narrow down to 3 or 4 datasets.
+- **Create:** Sourcing the aforementioned datasets
+- **Observe:** Each of these in depth and begin to whittle down our options
+- **Analyze:** Final selections with Peer POs and Professor Cordova to confirm and move forward.
+- **Tag:** M2-data summary
+- **Size:** Flower
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/8
+
