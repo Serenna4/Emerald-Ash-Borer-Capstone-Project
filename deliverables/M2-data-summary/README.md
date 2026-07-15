@@ -9,8 +9,6 @@ Submission: [Data Summary (1).pdf
 
 Status: Complete, peer reviewed.
 
-## PBIs Related to Milestone
-
 
 ## PBIs Related to Milestone
 
