@@ -7,4 +7,4 @@ Rubric: https://willamette.instructure.com/courses/10056/assignments/124617
 Submission: [Data Summary (1).pdf
 ](https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/blob/main/deliverables/M2-data-summary/Data%20Summary%20(1).pdf)
 
-Status: Complete.
+Status: Complete, peer reviewed.
