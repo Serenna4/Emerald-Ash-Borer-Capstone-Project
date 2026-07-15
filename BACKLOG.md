@@ -202,24 +202,43 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 
 ### PBI-018
 
-Receive template from Cordova for tree scraping at the weekly level
-Acquire and clean the data
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/18
+- **Title**: Brooke: Scrape Tree Data
+- **Hypothesis:** We can scrape the data for trees in Salem from the website with Cordova. Receive template from Cordova for tree scraping at the weekly level. Acquire and clean the data.
+- **Create:** A CSV of tree locations in Salem.
+- **Observe:** Row counts, missing ness, key uniqueness. Ensure that the data is accurate.
+- **Analyze:** Decide whether the dataset survives the feasibility.
+- **Size:** Tree
+- **Github Issue:** Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/18
 
 ### PBI-019
 
-Remove false identifications from the dataset
-https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/19
+- **Title:** Serenna: Clean EAB data
+- **Hypothesis:** We can scrape the EAB data from the website with Cordova. Receive template from Cordova for EAB scraping. Remove false identifications from the dataset.
+- **Creates:** A CSV of the EAB sightings in Salem.
+- **Observe:** Row counts, missingness, key uniqueness. Ensure that the data is accurate.
+- **Analyze:** Decide whether the dataset survives the feasibility. 
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/19
 
 ### PBI-020
 
-Aggregate stream temperatures to the weekly level
-https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/20
+- **Title:** Siera: Cleaning Stream Temperatures
+- **Hypothesis:** We can aggregate stream temperatures to the weekly level.
+- **Creates:** A CSV of the stream temperatures in Salem.
+- **Observe:** Row counts, missing ness, key uniqueness. Ensure that the data is accurate.
+- **Analyze:** Decide whether the dataset survives the feasibility. 
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/20
 
 ### PBI-021
 
-Select weather station and relevant weather columns
-https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/23
+- **Title:** Brooke: Clean Temperature Data
+- **Hypothesis:** We can aggregate weather temperatures to the month level. Select weather station and relevant weather columns.
+- **Creates:** A CSV of the EAB sightings in Salem.
+- **Observe:** Row counts, missing ness, key uniqueness. Ensure that the data is accurate.
+- **Analyze:** Decide whether the dataset survives the feasibility. 
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/23
 
 ### PBI-022
 
