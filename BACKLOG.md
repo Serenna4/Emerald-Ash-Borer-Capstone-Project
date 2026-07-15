@@ -104,80 +104,80 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 
 ### PBI-009
 
-Title: Data Cleaning
-Hypothesis: We can go through all of the datasets to ensure that they are aligned to the same level of observation, and that there are no remaining missing values.
-Create: Remedying missingness and levels of observation ensuring there is no duplication
-Observe: The newly cleaned dataset to ensure that there is no other notable errors across them.
-Analyze: Conferring with the Peer POs about patterns of missingness to ensure that the remedying is intuitive.
-Tag: M2-data summary
-Size: Forest
-GitHub issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/9
+- **Title:** Data Cleaning
+- **Hypothesis:** We can go through all of the datasets to ensure that they are aligned to the same level of observation, and that there are no remaining missing values.
+- **Create:** Remedying missingness and levels of observation ensuring there is no duplication
+- **Observe:** The newly cleaned dataset to ensure that there is no other notable errors across them.
+- **Analyze:** Conferring with the Peer POs about patterns of missingness to ensure that the remedying is intuitive.
+- **Tag:** M2-data summary
+- **Size:** Forest
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/9
 
 ### PBI-010
 
-Title: Exploratory Data Analysis
-Hypothesis: We can start exploring the data by gathering a better understanding of the format of the data. We will gather descriptive statistics which might be included on the Dashboard or for our own background knowledge. We could also start feature engineering to better support our goals of machine learning and prediction.
-Create: Summaries of the data and create engineered features for models to use.
-Observe: Review summary statistics and use this to remove any needed outliers. Review any engineered features to ensure their values make sense and support our goals
-Analyze: Check in with Peer POs and ensure our findings support our mission and make sense to an outside audience. Especially check that any engineered features are sensible.
-Tag: M3-Poster rough draft
-Size: Tree
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/10
+- **Title:** Exploratory Data Analysis
+- **Hypothesis:** We can start exploring the data by gathering a better understanding of the format of the data. We will gather descriptive statistics which might be included on the Dashboard or for our own background knowledge. We could also start feature engineering to better support our goals of machine learning and prediction.
+- **Create:** Summaries of the data and create engineered features for models to use.
+- **Observe:** Review summary statistics and use this to remove any needed outliers. Review any engineered features to ensure their values make sense and support our goals
+- **Analyze:** Check in with Peer POs and ensure our findings support our mission and make sense to an outside audience. Especially check that any engineered features are sensible.
+- **Tag:** M3-Poster rough draft
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/10
 
 ### PBI-011
 
-Title: Machine learning model for stream temperature for each year (RQ1)
-Hypothesis: We will create a model to predict the stream temperature within a given year. Only for 2020, 2022, and 2024.
-Create: Regression models have been produced
-Observe: Checking that the model make sense to the validation tests (RMSE, MAE, R^2, Cross validation)
-Analyze: Peer POs have checked the code and approved it, without displaying obvious logic gaps.
-Tag: M3-Poster rough draft
-Size: Forest
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/11
+- **Title:** Machine learning model for stream temperature for each year (RQ1)
+- **Hypothesis:** We will create a model to predict the stream temperature within a given year. Only for 2020, 2022, and 2024.
+- **Create:** Regression models have been produced
+- **Observe:** Checking that the model make sense to the validation tests (RMSE, MAE, R^2, Cross validation)
+- **Analyze:** Peer POs have checked the code and approved it, without displaying obvious logic gaps.
+- **Tag:** M3-Poster rough draft
+- **Size:** Forest
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/11
 
 ### PBI-012
 
-Title: Machine learning model for predicting stream temps using historical data and weather data (RQ2):
-Hypothesis: We will create a model for predicting the stream temperature, adding weather data from 2020, 2022, and 2024.
-Create: Try many different regression models to try and accurately predict stream temperature.
-Observe: We will observe how each model performs and select the model with the best combination of simplicity, R^2, RMSE, and MAE.
-Analyze: Use the performance indicators (RMSE, MAE) to select the best model and look at the trends in the predictions. We will sanity check this work with our Peer POs to ensure the results make sense.
-Tag: M3-Poster rough draft
-Size: Forest
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/12
+- **Title:** Machine learning model for predicting stream temps using historical data and weather data (RQ2):
+- **Hypothesis:** We will create a model for predicting the stream temperature, adding weather data from 2020, 2022, and 2024.
+- **Create:** Try many different regression models to try and accurately predict stream temperature.
+- **Observe:** We will observe how each model performs and select the model with the best combination of simplicity, R^2, RMSE, and MAE.
+- **Analyze:** Use the performance indicators (RMSE, MAE) to select the best model and look at the trends in the predictions. We will sanity check this work with our Peer POs to ensure the results make sense.
+- **Tag:** M3-Poster rough draft
+- **Size:** Forest
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/12
 
 ### PBI-013
 
-Title: Regression model for stream temp using canopy coverage (RQ3):
-Hypothesis: We will create a regression model for predicting the stream temp using historical data and canopy cover data in 2020, 2022, and 2024.
-Create: A regression model that measures the stream temp for each year.
-Observe: Do our model’s validation tests (R^2, RMSE, MAE, and cross-validation) make sense to our peers?
-Analyze: Do our model’s validation tests (R^2, RMSE, MAE, and cross-validation) make sense to other peers not in our natural resources group?
-Tag: M3-Poster rough draft
-Size: Forest
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/13
+- **Title:** Regression model for stream temp using canopy coverage (RQ3):
+- **Hypothesis:** We will create a regression model for predicting the stream temp using historical data and canopy cover data in 2020, 2022, and 2024.
+- **Create:** A regression model that measures the stream temp for each year.
+- **Observe:** Do our model’s validation tests (R^2, RMSE, MAE, and cross-validation) make sense to our peers?
+- **Analyze:** Do our model’s validation tests (R^2, RMSE, MAE, and cross-validation) make sense to other peers not in our natural resources group?
+- **Tag:** M3-Poster rough draft
+- **Size:** Forest
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/13
 
 ### PBI-014
 
-Title: Create Exploratory Data Analysis Visualizations
-Hypothesis: We can create 2 graphs to showcase the trends in the data and the impact of rising stream temps.
-Create: One graph showing the stream temp change by season from 2016 to 2024. And another graph showing the relationship between stream temperature and dissolved oxygen in streams.
-Observe: We will observe the graphs and perform and polishing to get them publish ready.
-Analyze: These graphs will help tell the story of our project and its impact. We will ask our Peer POs to review these graphs and ensure they support our message as we intend.
-Tag: M3-Poster rough draft
-Size: Tree
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/14
+- **Title:** Create Exploratory Data Analysis Visualizations
+- **Hypothesis:** We can create 2 graphs to showcase the trends in the data and the impact of rising stream temps.
+- **Create:** One graph showing the stream temp change by season from 2016 to 2024. And another graph showing the relationship between stream temperature and dissolved oxygen in streams.
+- **Observe:** We will observe the graphs and perform and polishing to get them publish ready.
+- **Analyze:** These graphs will help tell the story of our project and its impact. We will ask our Peer POs to review these graphs and ensure they support our message as we intend.
+- **Tag:** M3-Poster rough draft
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/14
 
 ### PBI-015
 
-Title: Create Model Graphics
-Hypothesis: We can create graphics regarding our models to demonstrate how we picked the best model and what values were most important to it.
-Create: We can create graphs for each research question showing which model performed the best using our evaluation metrics. We can also create a graph showing the primary variables being used in the models for the highest performing models.
-Observe: We will make sure these graphs are publish ready and support our story.
-Analyze: We will ask our Peer POs to give us feedback on the graphs for a sanity check and to make sure they work well with the rest of our material
-Tag: M3-Poster rough draft
-Size: Tree
-Github Issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/15
+- **Title:** Create Model Graphics
+- **Hypothesis:** We can create graphics regarding our models to demonstrate how we picked the best model and what values were most important to it.
+- **Create:** We can create graphs for each research question showing which model performed the best using our evaluation metrics. We can also create a graph showing the primary variables being used in the models for the highest performing models.
+- **Observe:** We will make sure these graphs are publish ready and support our story.
+- **Analyze:** We will ask our Peer POs to give us feedback on the graphs for a sanity check and to make sure they work well with the rest of our material
+- **Tag:** M3-Poster rough draft
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/15
 
 ### PBI-016
 
