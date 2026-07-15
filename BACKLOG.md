@@ -23,7 +23,7 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Analyze:** decide whether the dataset survives feasibility; document in the next Iteration Review.
 - **Tag:** `M1-proposal`
 - **Size:** Flower
-- **GitHub issue:** <link once filed>
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/35
 
 ### PBI-002
 
