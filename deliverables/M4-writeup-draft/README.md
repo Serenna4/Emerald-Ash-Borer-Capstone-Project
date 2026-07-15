@@ -1,9 +1,13 @@
-# `Project Proposal/`
+# `Writeup Draft`
 
-This is where Milestone 1 lives, which is the project proposal. Below are the links for the rubric, submission, and status
+This is where Milestone 4 lives, which is the writeup draft. Below are the links for the rubric, submission, and status.
 
-Rubric: https://willamette.instructure.com/courses/10056/assignments/125831 
+Rubric: https://willamette.instructure.com/courses/10056/assignments/126420 
 
-Submission: [Project_Proposal.pdf](Project_Proposal.pdf)
+Submission: 
 
-Status: Complete, peer reviewed. 
+Status: Interim.
+
+## PBTs Related to Milestone
+
+* Write-up First Draft
