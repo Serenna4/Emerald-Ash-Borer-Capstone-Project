@@ -181,14 +181,14 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 
 ### PBI-016
 
-Title: Add Data We Have to Repo (Small Part of Collect Data Task)
-Hypothesis: Broken up part of collecting data. We have some data, add it to the repository.
-Create: Finished downloaded and uploaded raw data in our repo that we already have linked.
-Observe: We can successfully download the data sources we have.
-Analyze: We ensure there are no apparent discrepancies in our current sources.
-Tag: M2-data summary
-Size: Flower
-GitHub issue: https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/16
+- **Title:** Add Data We Have to Repo (Small Part of Collect Data Task)
+- **Hypothesis:** Broken up part of collecting data. We have some data, add it to the repository.
+- **Create:** Finished downloaded and uploaded raw data in our repo that we already have linked.
+- **Observe:** We can successfully download the data sources we have.
+- **Analyze:** We ensure there are no apparent discrepancies in our current sources.
+- **Tag:** M2-data summary
+- **Size:** Flower
+- **GitHub issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/16
 
 ### PBI-017
 
