@@ -10,13 +10,3 @@ Status: Complete. Needs peer review.
 
 ## PBIs Related to Milestone
 
-* Select Final Data Sources
-* Add Data We Have to Repo
-* Data Cleaning
-    * Serenna: Clean EAB Data
-    * Siera: Create shapefile for streams
-    * Siera: Cleaning Stream Temperatures
-    * Brooke: Clean Temperature Data
-* Exploratory Data Analysis
-    * Create Exploratory Data Analysis Visualizations
-* Amend Data Summary
