@@ -1,0 +1,93 @@
+---
+title: "Capstone Graphing"
+author: "Siera Edwards"
+date: "2026-07-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Graphing Stream Temperature and Dissolved Oxygen
+
+```{r}
+library(tidyverse)
+library(dplyr)
+
+```
+
+
+```{r cars}
+s1 = read_csv("mic12.csv")
+s2 = read_csv("mic3.csv")
+gore_stream = read_csv("ds_daily.csv")
+```
+
+```{r}
+# combining the datasets
+
+s1 = s1 %>% mutate(site = "mic12")
+s2 = s2 %>% mutate(site = "mic3")
+
+df = rbind(s1,s2)
+df$season <- factor(df$season, levels = c("Summer", "Fall", "Spring", "Winter")) 
+
+head(df)
+
+
+# adjusting raw stream temperature data for graphing
+summary(gore_stream)
+
+gore_stream_clean = gore_stream %>% 
+  mutate(avg_do = replace_na(avg_do, median(gore_stream$avg_do)))
+summary(gore_stream_clean) # replacing rows with NA to 0 for average do
+
+
+```
+
+```{r}
+df %>% 
+  ggplot(aes(x = start_date, y = median_temp_c, color = season)) + 
+  geom_point(alpha = 0.5) + 
+  geom_smooth(method = "lm", se = FALSE) + 
+  theme_minimal() + 
+  labs(
+    x = "Date (months)",
+    y = "Median Stream Temperature (Celcius)",
+    title = "Salem's Stream Temperatures Are On the Rise",
+    subtitle = "Trends in Stream Temperature by Season from 2016 to 2025"
+  ) + 
+  scale_color_manual(  # adjust colors to make sense
+    name = "Season",
+    values = c("Winter" = "lightskyblue", "Fall" = "chocolate", "Spring" = "palegreen3", "Summer" = "palevioletred1")
+    ) + 
+  theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )
+
+
+```
+
+
+```{r}
+
+gore_stream_clean %>% 
+  ggplot(aes(x = avg_temp, y = avg_do)) + 
+  geom_point(alpha = 0.2, color = "#5E704C") + 
+  theme_minimal() + 
+  labs(
+    x = "Average Temperature (Degrees Celcius)",
+    y = "Average Dissolved Oxygen (mg/L)",
+    title = "Higher Stream Temperatures are Correlated with Lower Dissolved Oxygen",
+    subtitle = "Average Stream Temperature Compared to Average Dissolved Oxygen \nin the Salem Mill Creek from 2014 to 2025"
+  ) + 
+  theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold")
+  )
+
+```
