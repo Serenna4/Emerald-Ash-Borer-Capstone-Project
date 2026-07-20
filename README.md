@@ -250,16 +250,20 @@ One subsection per class week. The owner team commits the new section **before e
 **Milestone tag in focus:** `M4-writeup-draft`
 
 **Completed PBIs**
-- ...
+- We have shifted and redone all of the PBIs on model creation, because we're making new models entirely!
+- Create Descriptive Analysis Graphs (DO vs Stream temp, Stream temp rise)
+- Begin Write-Up
 
 **Stakeholder response log**
-- ...
+- None
 
 **Plan for next iteration**
-- ...
+- Finish all graphs
+- Create Final Write-up Iteration
+- Create Final Poster Iteration
 
 **Risks and impediments**
-- ...
+- Time is something we are worried about. We have another meeting with Dr. Gore tomorrow, which should help us get our analysis and visuals completed. And then we will be able to move on to finishing the poster and write-up! But that has to happen very quickly.
 
 ## Week 12 -- Write-up rough-draft milestone (M4)
 
