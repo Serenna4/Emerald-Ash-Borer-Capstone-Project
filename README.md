@@ -246,7 +246,7 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 11
 
-**Iteration ending:** <date>
+**Iteration ending:** 7/20/26
 **Milestone tag in focus:** `M4-writeup-draft`
 
 **Completed PBIs**
@@ -265,29 +265,31 @@ One subsection per class week. The owner team commits the new section **before e
 **Risks and impediments**
 - Time is something we are worried about. We have another meeting with Dr. Gore tomorrow, which should help us get our analysis and visuals completed. And then we will be able to move on to finishing the poster and write-up! But that has to happen very quickly.
 
-## Week 12 -- Write-up rough-draft milestone (M4)
+## Week 12 
 
-**Iteration ending:** <date>
+**Iteration ending:** 7/27/26
 **Milestone tag in focus:** `M4-writeup-draft`
 
 **Completed PBIs**
-- ...
+- Finish All Graphs
+- Picked a final model to use in conclusions
+- Finished Analysis for models
+- Wrote most of the Write-Up Draft
+- Make progress on Poster
 
 **Stakeholder response log**
-- ...
+- N/A
 
 **Plan for next iteration**
-- ...
+- Finish Write-Up Draft
+- Finish Final Draft of Poster
+- Finish ARIMA model with Dr.Gore's help
 
 **Risks and impediments**
-- ...
+- We want to make sure we 100% understand the ARIMA model.
+- We are worried about running out of time to finish everything
 
-**Retrospective (milestone boundary)**
-- What worked: ...
-- What did not: ...
-- One change for next iteration: ...
-
-## Week 13
+## Week 13 -- Write-up rough-draft milestone (M4)
 
 **Iteration ending:** <date>
 **Milestone tag in focus:** `M5-final`
@@ -303,6 +305,11 @@ One subsection per class week. The owner team commits the new section **before e
 
 **Risks and impediments**
 - ...
+
+**Retrospective (milestone boundary)**
+- What worked: 
+- What did not: ...
+- One change for next iteration: ...
 
 ## Week 14 -- Final write-up and poster (M5)
 
