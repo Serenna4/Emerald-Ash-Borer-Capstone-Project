@@ -430,14 +430,14 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Observe:** Ensure that the ARIMA model is complete and assists in answering our research question and sub-questions.
 - **Analyze:** Have experts review our ARIMA model and analysis of the model.
 - **Tag:** M4-Write-up Draft
-- **Github Issue:**
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/44
 
 ### PBI-040
 
 - **Title:** Finish Coefficient Graph for Tree Canopy
-- **Hypothesis:**
-- **Create:**
-- **Observe:**
-- **Analyze:**
-- **Tag:**
-- **Github Issue:**
+- **Hypothesis:** We can finish the coefficient graph for the tree canopy using Model 5.
+- **Create:** Create the completed coefficient graph that shows why using tree canopy data doesn't help the model.
+- **Observe:** Ensure that the coefficient graph clearly communicates the trend of coefficients vs. urban tree canopy percent.
+- **Analyze:** Have experts review the coefficient graph and make sure we created it correctly.
+- **Tag:** M4-Write-up Draft
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/45
