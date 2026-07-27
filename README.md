@@ -258,9 +258,10 @@ One subsection per class week. The owner team commits the new section **before e
 - None
 
 **Plan for next iteration**
-- Finish all graphs
-- Create Final Write-up Iteration
-- Create Final Poster Iteration
+- Picked a final model to use in conclusions
+- Finished Analysis for models
+- Wrote most of the Write-Up Draft
+- Make progress on Poster
 
 **Risks and impediments**
 - Time is something we are worried about. We have another meeting with Dr. Gore tomorrow, which should help us get our analysis and visuals completed. And then we will be able to move on to finishing the poster and write-up! But that has to happen very quickly.
@@ -271,7 +272,6 @@ One subsection per class week. The owner team commits the new section **before e
 **Milestone tag in focus:** `M4-writeup-draft`
 
 **Completed PBIs**
-- Finish All Graphs
 - Picked a final model to use in conclusions
 - Finished Analysis for models
 - Wrote most of the Write-Up Draft
@@ -281,9 +281,10 @@ One subsection per class week. The owner team commits the new section **before e
 - N/A
 
 **Plan for next iteration**
-- Finish Write-Up Draft
-- Finish Final Draft of Poster
+- Create Final Poster Iteration
+- Create Final Write-Up Iteration
 - Finish ARIMA model with Dr.Gore's help
+- Finish Coefficient Graph for Tree Canopy
 
 **Risks and impediments**
 - We want to make sure we 100% understand the ARIMA model.
