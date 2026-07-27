@@ -352,8 +352,92 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 
 ### PBI-032
 
+- **Title:** We have shifted and redone all of the PBIs on model creation, because we're making new models entirely!
+- **Hypothesis:** After attempting our other machine learning models in Python, we realized they do not explain anything about the data. Professor Dr. Gore advised us to use linear regression models in R. Our hypothesis is that we can make linear regression models in R that show us how/can we can predict stream temperature using historic stream temperature, weather, and tree canopy data.
+- **Create:** Create multiple linear regression models with high-level interactions in R iteratively, with different data included for each model.
+- **Observe:** Ensure that our new linear regression models answer our research question and sub-questions.
+- **Analyze:** Have peer POs and our experts review the new plan for modeling to answer research questions and bring up any new concerns early.
+- **Tag:** M4-Write-up Draft
+- **Size:** Forest
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/37
+
 ### PBI-033
+
+- **Title:** Create Descriptive Analysis Graphs (DO vs Stream temp, Stream temp rise)
+- **Hypothesis:** We can create descriptive analytic graphs to show the relationship between dissolved oxygen and stream temperature and the trend is stream temperature rise.
+- **Create:** Create two descriptive analytic graphs.
+- **Observe:** Ensure that the trends the graphs communicate are correct and they are clear.
+- **Analyze:** We will have peer POs review graphs and if they assist in communicating our data.
+- **Tag:** M4-Write-up Draft
+- **Size:** Tree
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/38
 
 ### PBI-034
 
+- **Title:** Begin Write-Up
+- **Hypothesis:** We can begin the write-up for the rough draft.
+- **Create:** Start the beginning of the rough draft of the write-up.
+- **Observe:** Ensure that enough progress is done on the rough draft of the write-up so that we can have a nearly complete draft ready for peer review.
+- **Analyze:** We will have peer POs and experts give feedback on our write-up.
+- **Tag:** M4-Write-up Draft
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/39
+
 ### PBI-035
+
+- **Title:** Picked a final model to use in conclusions
+- **Hypothesis:** We can pick which final model would best communicate the findings of our research question.
+- **Create:** A decision on which model to use for conclusions.
+- **Observe:** Ensure that the results of our final model to use for a majority of the conclusions in our poster and write-up answers research questions. 
+- **Analyze:** We will have peer POs and experts review our final model decision.
+- **Tag:** M4-Write-up Draft
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/40
+
+### PBI-036
+
+- **Title:** Finished Analysis for Models
+- **Hypothesis:** We can complete our analysis for models with the new linear regression models created in R. 
+- **Create:** Write up analysis for poster and write-up rough draft using results from linear regression models.
+- **Observe:** Ensure that the analysis for the poster and write-up rough draft is complete using linear regression models.
+- **Analyze:** We will have peer POs and experts review our analysis of our final linear r
+- **Tag:** M4-Write-up Draft
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/41
+
+### PBI-037
+
+- **Title:** Make Progress on Poster
+- **Hypothesis:** We can make progress on our poster to ensure that our poster is done in time for the final submission for printing.
+- **Create:** Finish sections on the poster that are currently under editing.
+- **Observe:** Ensure that the poster is in progress to finish in time for the final submission for printing.
+- **Analyze:** Have peer POs review the poster before the final submission.
+- **Tag:** M5-Final Submission
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/42
+
+### PBI-038
+
+- **Title:** Wrote most of the Write-Up Draft
+- **Hypothesis:** We can write most of the write-up during Week 11 to ensure our write-up is complete enough for the rough draft submission. 
+- **Create:** Create an almost finalized version of our write-up so that we can have an effective peer review process.
+- **Observe:** Ensure that write-up is on progress to be mostly complete by the rough draft deadline.
+- **Analyze:** Have peer POs review rough draft write-up.
+- **Tag:** M4-Write-up Draft
+- **Github Issue:** https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project/issues/43
+
+### PBI-039
+
+- **Title:** Finish ARIMA model with Dr.Gore's help
+- **Hypothesis:** We can finish the ARIMA model to look further into detail of our weather and stream temperature model...with Dr. Gore's help.
+- **Create:** Create a complete ARIMA model that shows more detail into predicting stream temperature with historic stream temperature and weather data. 
+- **Observe:** Ensure that the ARIMA model is complete and assists in answering our research question and sub-questions.
+- **Analyze:** Have experts review our ARIMA model and analysis of the model.
+- **Tag:** M4-Write-up Draft
+- **Github Issue:**
+
+### PBI-040
+
+- **Title:** Finish Coefficient Graph for Tree Canopy
+- **Hypothesis:**
+- **Create:**
+- **Observe:**
+- **Analyze:**
+- **Tag:**
+- **Github Issue:**
