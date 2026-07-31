@@ -1,0 +1,57 @@
+Protecting Salem’s Ecosystem poster feedback
+
+- Overall
+  - great job! well put-together, clearly displays your results and their value
+  - love the color scheme, well themed!
+  - colon at end of title? to indicate there is a subtitle, i did not realize there was for a second
+- Abstract
+    - “The aim of this project is to model…” -> “This project models…” - you’ve already done it! 
+    - “One model stood out among the rest as an exceptionally well-performing model” -> “One model stood out among the rest, performing exceptionally well”
+    - mention of climate change? may be relevant
+- Introduction & Motivation
+    - box size can be smaller? the empty space at the bottom feels a little weird
+    - Salem’s population as in humans or plants/animals? Not completely clear
+    - Good research questions! Clear and answerable! seem to match results as well
+- Background & Related Work
+    - good context! supports your approach and explains importance of this issue
+    - since you have a little extra space above (if intro/motivation box was smaller), i’d add some space between the paragraphs. just like 5 or something, you can do it in line and paragraph spacing > Add space after paragraph or custom spacing
+    - “this research will support government” is a little vague - you probably don’t have room to elaborate on it here, but I’d be ready to answer questions if it comes up
+- Data, Engineering & Ethics
+    - should it be data publishers (plural)? i’m not sure
+    - I think you can just leave it at “Our data contains no PII” - if you want to elaborate, maybe “Our data contains no PII, so no personal information is at risk.” (if you keep as is, “is” -> “are”)
+    - “rather” -> “instead”? 
+    - i like the context for stream sites and the map placement! great context for people who know the area. i know you were unsure of the placement, so if you wanted to move it it would fit in background/context as well, but i think it makes sense here too
+    - is it possible to split “raw_urban_tree_canopy.shp” on an underscore instead of the middle of a word? doesn’t really matter, but takes an extra second to read. same with Public_Storm_Creeks…
+        - i honestly don’t know that you need to write out the names of the files? especially with the one that’s just numbers, providing a short name or descriptor might add more value for viewers that aren’t familiar with your data
+    - pipeline is very clear (and on theme)! i especially like the speech bubble shapes adding context to each step
+- Methods & Evaluation
+    - clean and clear! nicely done!
+    - I’m not sure why the order is relevant - a brief sentence explaining why you did it in this order or what doing it iteratively achieved might add some clarity, but if space is a concern it isn’t necessary (again I’d just be prepared to answer questions if it comes up)
+- Results & Visualizations
+    - is it possible to make the text on the visualizations bigger? i think the graphs themselves are a good size, it’s just a little hard to read. (i think with ggsave there’s a way to specify image size that changes relative size of text?)
+    - you explain which models you looked at in methods/eval, but you don’t specify which iteration this high-performing model is - it looks like #2, but it might be worth saying that so that connection is made explicitly
+    - totally understand if it’s cut for space, but I’m interested in how the other models performed - might be worth having any relevant figures on hand in case people ask!
+    - NICE R-squared value!
+    - for all plots, i really like that you include the data source and n (i will be stealing that)
+    - High Heat in Salem’s Streams
+        - i really like the blue text callout! good context! overall this plot provides great context for what you’re trying to model and what the data looks like
+        - love the matching points and text - i might make the highlighted points a slightly more blue color, as i briefly thought they were black which made me think they were not actual data points? i assume you’re using the same color for the text and points, but at least on my screen the text looks a lot more blue than the points for some reason (could also be a my screen issue)
+        - How frequently were the temperature readings taken? did you aggregate them/smooth them at all? might be worth mentioning either in engineering or in methods/eval section if not here (or when you talk about the data if you just pulled it as it was, but i feel like i remember you saying they were every half hour or something crazy like that)
+    - Higher Stream Temperatures are Correlated with Lower Dissolved Oxygen
+        - nice! very clear, good use of alpha - outlying points are clear but still fade in comparison to the main trend you’re showing
+        - is there a reason you’re using celsius here and Fahrenheit in your other two plots? 
+    - Predictions of Stream Temperatures
+        - I’m assuming the pink lines are the prediction into the future, and the darker blue is the present prediction overlaid on the original green data points - but i think a non-technical audience member would not necessarily figure that out (or at least not quickly). i strongly recommend a legend! if it doesn’t fit in the actual plot itself, some written text to the side would work just fine (especially because you have some wiggle room on either side of this plot)
+        - it’s difficult to see the difference between the future predictions in the two graphs - there’s a lot of noise and they’re far away from each other. is there a way to make the difference more obvious? and if there isn’t a huge difference, it’s probably worth writing that somewhere. 
+        - I don’t think you mention predicting for two different warming versions anywhere else until it appears in this plot - i’d say it’s worth a mention either in the written part of the results section or in methods/eval
+        - this might make everything super cluttered and horrible, but because there’s so much noise, to get a sense of rising temperatures more clearly it might be useful to include a yearly metric overlaid on the weekly/daily predictions. again, it might just make wayyy too busy, but as it stands now it’s difficult to make a clear comparison over time and the viewer kind of just has to take your word for it on the rising temps
+        - that said, this is a great way to show off your model! you can see really clearly how much it matches up with the underlying data, well done
+- Discussion, Limitations & Conclusions
+    - I might clarify “in answer to our first research question,” or omit it? as long as the phrasing matches the phrasing of your research questions, i think it’s already clear what you’re answering
+    - this is the first mention of your other models’ results - might be worth talking about them in results too? if it’s not relevant or takes up too much space, this is also fine
+    - it’s increased R-squared -> its
+    - you can take out “However” from “out chosen model” since the next clause starts with “but”
+    - nice conclusions! clearly shows what you’ve achieved and what was limited by your data, concise and honest. 
+- Bottom panel (Reproducibility & References, Acknowledgements)
+    - it is slightly strange to me that reference 2 comes up before reference 1 but I don’t think it matters. seems well-researched!
+    - nice acknowledgements! the “and” in “and all of our peers” probably does not need to be capitalized 
