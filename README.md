@@ -292,25 +292,29 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 13 -- Write-up rough-draft milestone (M4)
 
-**Iteration ending:** <date>
+**Iteration ending:** 8/3/26
 **Milestone tag in focus:** `M5-final`
 
 **Completed PBIs**
-- ...
+- Create Final Poster Iteration
+- Create Draft Write-Up Iteration
+- Attempted ARIMA model 
+- Finished prediction graph
 
 **Stakeholder response log**
-- ...
+- We received some helpful poster feedback from our Peer PO group and implemented the changes in our poster.
 
 **Plan for next iteration**
-- ...
+- Practice Presentation
+- Work on editing write-up
 
 **Risks and impediments**
-- ...
+- We want to really get our story down so that we feel comfortable presenting and answering questions on the presentation date. 
 
 **Retrospective (milestone boundary)**
-- What worked: 
-- What did not: ...
-- One change for next iteration: ...
+- What worked: Having feedback from the peer PO group helped ensure our poster was understandable to a wider audience. Getting an early start on the poster and write-up alleviated some stress.
+- What did not: The ARIMA model was unsuccessful. 
+- One change for next iteration: We have to clean up our description of our methods, results, and conclusions greatly for the final write-up. 
 
 ## Week 14 -- Final write-up and poster (M5)
 
