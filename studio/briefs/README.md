@@ -1,6 +1,7 @@
 # Using Machine Learning to Identify Dog Breeds
 
 **Authors:** Amaya Supancich-McCord, Brooke Proctor, and Serenna Walter
+
 **Date:** August 11, 2026
 
 This file contains the information to navigate the deliverables for the DATA 515 Advanced Machine Learning final project. 
