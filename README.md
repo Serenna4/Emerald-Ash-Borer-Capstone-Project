@@ -298,6 +298,7 @@ One subsection per class week. The owner team commits the new section **before e
 **Completed PBIs**
 - Create Final Poster Iteration
 - Create Draft Write-Up Iteration
+- Create Final Graphics Iteration
 - Attempted ARIMA model 
 - Finished prediction graph
 
@@ -318,19 +319,19 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 14 -- Final write-up and poster (M5)
 
-**Iteration ending:** <date>
+**Iteration ending:** 8/15/2026
 **Milestone tag in focus:** `M5-final`
 
 **Completed PBIs**
-- ...
+- Create Final Write-Up Iteration
 
 **Stakeholder response log**
-- ...
+- We recieved helpful feedback from Professor Cordova on our rough draft for our write-up and helpful feedback from our Peer PO group and implemented the cahnges in our final write-up.
 
 **Final retrospective**
-- What worked: ...
-- What did not: ...
-- What we would change if we ran this project again: ...
+- What worked: We created a successful preliminary tool for the City of Salem that has a strong base model to build on in the future. 
+- What did not: Creating the finalized tool that we hoped to create was impossible due to data limitations.
+- What we would change if we ran this project again: If we ran this project again, we would get input from many different professor's perspectives early on in the project. This would help us be more informed so that we could avoid needing to pivot multiple times throughout the process.
 
 ---
 
