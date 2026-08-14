@@ -7,7 +7,7 @@ This is where Milestone 5 lives, which is the final writeup and poster. Below ar
 Rubric: https://willamette.instructure.com/courses/10056/assignments/127414
 
 Submission: [DATA510-Poster.pdf
-](link)
+](https://github.com/Serenna4/Stream-Temperature-Capstone-Project/blob/main/deliverables/M5-final/DATA510-Poster.pdf)
 
 Status: Complete.
 
