@@ -24,7 +24,7 @@ Analyzing the impact of Emerald Ash Borer infestations, high risk forested areas
 | [`studio/briefs/`](studio/briefs/) | Weekly Studio Briefs from peer POs (`W<NN>-<peer>.md`). |
 | [`studio/critiques/`](studio/critiques/) | Weekly Studio Critiques from peer POs (`W<NN>-<peer>.md`). |
 | [`src/`](src/) | Working code (scripts, modules). |
-| [`notebooks/`](notebooks/) | Exploratory and reporting notebooks. |
+| [`notebooks/`](notebooks/) | Exploratory and reporting notebooks. (Not used in this project, used PDFs in src folder) |
 | [`data/`](data/) | Project data. Raw inputs are `.gitignored` by default; see `data/README.md`. |
 | [`deliverables/`](deliverables/) | Milestone deliverables: proposal, data summary, poster, write-up. |
 
