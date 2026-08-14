@@ -1,0 +1,546 @@
+---
+title: "Predictive Modelling of Stream Temperature"
+author: "Brooke Proctor, Siera Edwards, and Serenna Walter"
+date: "2026-07-28"
+output: html_document
+---
+
+# Introduction
+
+This markdown takes in the files XYZ and uses the data to create several different linear models. These models are then evaluated using metrics such as Root Mean Squared Error and R-squared to determine which models deserve extra time and graphing.
+
+# Libraries
+
+To begin, all necessary libraries must be loaded.
+
+```{r}
+library(tidyverse)
+library(car)
+library(forecast)
+library(gridExtra)
+```
+
+# Part One: Stream Temperature
+
+## The Data
+
+The base data for this project is Stream Temperature information in a raw file called ds_daily.csv, comes from CastawayWU, with permissions for use given by Dr. Kristen Gore at Willamette University. The Stream Temperature data needs to be read in.
+
+```{r}
+streams = read_csv("ds_daily.csv")
+```
+
+Then, a mutate function should be used to create an average temperature column that is in Fahrenheit, for ease of graphing. Additionally, replacing the NA values in dissolved oxygen with zeros will make graphing tidier.
+
+```{r}
+# Adding in a Fahrenheit column
+streams=streams%>%mutate(avg_temp_f=avg_temp*(9/5)+32)
+
+# Replacing NAs in avg_do with zeros
+streams_clean = streams %>% 
+  mutate(avg_do = replace_na(avg_do, median(streams$avg_do)))
+summary(streams_clean) 
+```
+
+For Exploratory Data Analysis, a season column will be useful.
+```{r}
+streams_clean = streams_clean %>% mutate(month_num = as.numeric(format(date_only, "%m")), season = case_when(
+  month_num == 9 | month_num == 10 | month_num == 11 ~ "Fall",
+  month_num == 12 | month_num == 1 | month_num == 2 ~ "Winter",
+  month_num == 3 | month_num == 4 | month_num == 5 ~ "Spring",
+  month_num == 6 | month_num == 7 | month_num == 8 ~ "Summer"
+  ))
+```
+
+For the modelling later on, day of the month will become important as a factor.
+```{r}
+streams_clean=streams_clean%>%mutate(day_of_month=day(date_only))
+```
+
+## Exploratory Data Analysis
+
+Next, some exploratory plots were made to understand the relationships between variables before models are built.
+
+### Stream Temperatures and Dissolved Oxygen Relationships
+
+```{r}
+plot_saved=streams_clean %>% 
+  ggplot(aes(x = avg_temp, y = avg_do)) + 
+  geom_point(alpha = 0.2, color = "#53704c") + 
+  theme_minimal() + 
+  labs(
+    x = "Average Temperature (Degrees Celcius)",
+    y = "Average Dissolved Oxygen (mg/L)",
+    title = "Higher Stream Temperatures are Correlated with Lower Dissolved Oxygen",
+    subtitle = "Average Stream Temperature Compared to Average Dissolved Oxygen \nin the Salem Mill Creek from 2014 to 2025",
+    caption="n=7543 \nSource: CastawayWU"
+  ) + 
+  theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold")
+  )
+#ggsave("do_plot.jpg", plot_saved, width=6, height=4, dpi=300)
+plot_saved
+```
+
+### Relationships Between Both Stream Sites and Temperature
+```{r}
+# Pivoting wider to look at the locations as individual columns
+ds=streams_clean%>%select(date_only, avg_temp_f, Location)%>%pivot_wider(names_from=Location,values_from=avg_temp_f)
+
+# Graphing the relationship between stream temperatures at both locations
+ds%>%ggplot()+geom_point(aes(x=MIC3,y=MIC12),color="#53704c",alpha=0.2)+theme_minimal()+labs(
+  title="Similarity Across Stream Temperatures",
+  subtitle="Relationship Between Both Stream Sites Temperature",
+  x="MIC 3 Temperature (Fahrenheit)",
+  y="MIC 12 Temperature (Fahrenheit)",
+  caption="n=3809 \nSource: CastawayWU"
+)+ 
+  theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )
+```
+
+### Seasonal Trends in Stream Temperature
+
+```{r}
+streams_clean%>%
+  ggplot(aes(x = date_only, y = avg_temp_f, color = season)) + 
+  geom_point(alpha = 0.05) + 
+  geom_smooth(method = "lm", se = FALSE) + 
+  theme_minimal() + 
+  labs(
+    x = "Date (months)",
+    y = "Median Stream Temperature (Fahrenheit)",
+    title = "Salem's Stream Temperatures Are On the Rise",
+    subtitle = "Trends in Stream Temperature by Season from 2016 to 2025",
+    caption = "n=7543 \nSource: CastawayWU"
+  ) + 
+  scale_color_manual(  # adjust colors to make sense
+    name = "Season",
+    values = c("Winter" = "lightskyblue", "Fall" = "chocolate", "Spring" = "palegreen3", "Summer" = "palevioletred1")
+    ) + 
+  theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )
+```
+
+### Graphing Stream Temperature Over Time & Highlighting Outliers
+
+```{r}
+streams_clean=streams_clean%>%mutate(is_heatwave=case_when(date_only<"2021-06-29" & date_only >"2021-06-26" ~ 1,
+                                                 TRUE ~ 0))
+
+plot_saved=streams_clean %>%
+  ggplot(aes(x = date_only, y = avg_temp_f, color=as.factor(is_heatwave))) + 
+  geom_point()+theme_minimal()+scale_color_manual(values=c("palegreen3","#003b5c"))+theme(legend.position="none")+annotate("text",x=19500,y=81.5,label="Oregon hit a record-breaking heatwave in 2021 \nand hit peaks June 27th and 28th",color="#003b5c",size=3,fill=NA,label.color=NA)+
+  labs(x="Date",
+       y="Average Stream Temperature (Fahrenheit)",
+       title="High Heat in Salem's Streams",
+       subtitle="Temperature Timeseries of MIC3 and MIC12 in Salem from 2015 to 2025",
+       caption="n=7543 \nSource: CastawayWU") + 
+  theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )
+
+#ggsave("stream_temp_anomalies.jpg", plot_saved, width=6, height=4, dpi=300)
+plot_saved
+```
+
+## Modelling
+
+### Model 1
+
+The first model contains data from 2015 onward, and uses year as a character. The only interaction being used is the day of the year squared term.
+
+```{r}
+# Filtering the data and correcting data types
+ds = streams_clean %>% filter(date_only >= "2015-01-01") %>% mutate(
+  day_year = yday(date_only),
+  year = as.character(year(date_only)),
+  month = month(date_only)
+)
+
+# Making the model
+mod1 = lm(avg_temp~Location+year+factor(month)+day_year^2, data = ds)
+summary(mod1)
+plot(mod1)
+sqrt(mean(mod1$residuals^2))
+```
+
+### Model 2
+
+The second model will repeat the last, without the outliers.
+
+```{r}
+#removing outliers
+names(mod1)
+ds=ds %>% mutate(the_resids = abs(mod1[["residuals"]])) %>% arrange(desc(the_resids))
+head(ds)
+ds=ds%>%filter(the_resids<=7)
+
+#modelling again
+mod2 = lm(avg_temp~Location+year+factor(month)+day_year^2, data = ds)
+summary(mod2)
+plot(mod2)
+sqrt(mean(mod2$residuals^2))
+```
+
+### Model 3
+
+Model three builds off of model two, and uses day_year as a factor instead of squaring it.
+
+```{r}
+mod3 = lm(avg_temp~Location+year+factor(month)+factor(day_year), data = ds)
+summary(mod3)
+plot(mod3)
+sqrt(mean(mod3$residuals^2))
+```
+
+# Part Two: Weather
+
+To keep adding to the models performance, more columns were added from weather--maximum daily air temperature and precipitation.
+
+## The Data
+
+This data comes from the National Oceanic and Atmospheric Administration. It is freely available via web request on [the NOAA website](https://www.ncdc.noaa.gov/cdo-web/search;jsessionid=CBA44486C08C1FFC941A039773A8491D). This is stored and sent as a .csv file called 4346262.csv. This data has been cleaned and transformed into temp_clean.csv, which needs to be read in.
+
+```{r}
+setwd("C:\\Users\\19717\\OneDrive\\Willamette\\0 Capstone\\Data")
+weather=read_csv("temp_clean.csv")
+```
+
+Now that the data is in, it needs to be merged with the streams_clean dataframe to be used in a model.
+
+```{r}
+weathermodds=left_join(streams_clean, weather, by=join_by(date_only==DATE))
+```
+
+## Exploratory Data Analysis
+
+### Graphing Weather Data Over Time & Anomalies
+
+```{r}
+# Filtering the data to the correct point in time and adding in a boolean for coloring in the graph
+weather %>% 
+  filter(DATE >= "2015-01-01")%>%
+  mutate(is_heatwave=case_when(DATE<"2021-06-29" & DATE >"2021-06-26" ~ 1,
+                                                 TRUE ~ 0))%>%
+  ggplot(aes(x = DATE, y = TMAX, color=factor(is_heatwave))) + geom_point()+
+  theme_minimal()+
+  scale_color_manual(values=c("palegreen3","#003b5c"))+
+  theme(legend.position="none")+annotate("text",x=19650,y=118,label="Oregon hit a record-breaking heatwave in \n2021, and hit peaks June 27th and 28th",color="#003b5c",size=3,fill=NA,label.color=NA)+
+  labs(x="Date",
+       y="Average Air Temperature (Fahrenheit)",
+       title="High Heat in Salem's Summers",
+       subtitle="Timeseries of Air Temperature in Salem from 2015 to 2026",
+       caption="n=46027 \nSource: National Oceanic and Atmospheric Administration")
+```
+
+## Modelling
+
+### Model 4
+
+Model four uses year as a factor, as well as using multiple interactions between variables that have not been used in previous models thus far.
+
+```{r}
+# Correcting data types
+ds2 = weathermodds %>% filter(date_only >= "2015-01-01") %>% mutate(
+  day_year = yday(date_only),
+  year = as.character(year(date_only)),
+  the_month = factor(month(date_only))
+)
+
+# Selecting relevant columns only
+ds2%>%select(date_only,Location,avg_temp_f,avg_do,avg_turbidity,day_of_month,PRCP,TMAX,the_month,year)
+
+# Making the model with interactions
+mod4 = lm(avg_temp_f~Location+year+PRCP*TMAX+day_of_month*the_month, data = ds2)
+summary(mod4)
+plot(mod4)
+sqrt(mean(mod4$residuals^2))
+```
+
+#### Additional Measures
+
+Because this is the best performing model in terms of R-Squared value, additional checks and metrics are run.
+
+```{r}
+# Checking ANOVA
+aov(mod4)
+
+# Checking variance inflation factor
+vif(mod4)
+
+# Getting our standardized coefficients
+library(lm.beta)
+lm.beta(mod4)
+```
+
+#### Additional Plotting
+
+Due to it's high performance, having a visual for this model is helpful.
+
+```{r}
+# Plotting mod4
+ggplot()+geom_point(aes(y=mod4$fitted.values,x=ds2$date_only), color='palegreen3', size=2.5)+geom_line(aes(x=ds2$date_only,y=ds2$avg_temp_f),color='#003b5c')+theme_minimal()+labs(x="Date", y="Average Stream Temperature (Fahrenheit)", title="Predictions of Stream Temperatures", subtitle="Average Stream Temperatures and Predicted Temperatures across Time", captions="n=7541, \nSource: National Oceanic and Atmospheric Administration and CastawayWU")+ theme(
+    legend.key = element_blank(),
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )
+```
+
+### Model 5
+
+While Model 4 performs exceptionally well, it also uses a factor for year, meaning no additional years can be predicted off of it. Due to this, an identical model was created using year as a numeric value, with the trade off being a lower R-Squared value but the capacity to predict into the future.
+
+```{r}
+# Running the same model but with year as a numeric value
+ds2$year=as.character(ds2$year)
+ds2$year=as.numeric(ds2$year)
+mod5 = lm(avg_temp_f~Location+year+PRCP*TMAX+day_of_month*the_month, data = ds2)
+summary(mod5)
+plot(mod5)
+sqrt(mean(mod5$residuals^2))
+```
+
+### Predicting Into the Future
+
+Model five gives us the ability to predict into the future using this line of best fit. To test this, a slope was created using 2050's infamous 2.5 degrees of average global warming number to get a by-year linear slope. This is not exact climate modelling, but will work for the purpose of testing out new, fabricated data in the predictions. This prediction also assumes that all other variables are identical to 2024.
+
+#### Fabricating a Slope
+
+```{r}
+# Doing math to get the slope for 0 and 2.5 degree change by 2050 from 2024
+base=(65.9-32)/(9/5)
+
+by2.5=base+2.5
+slope2.5=((by2.5-base)/(2050-2024)*(9/5))
+```
+
+#### Making New Data
+
+```{r}
+# Making new data for predictions
+# New data for 2026 no change
+y2026t0=ds2%>%filter(year==2024)
+y2026t0$date_only=y2026t0$date_only+365+365
+y2026t0$year="2026"
+
+# New data for 2026 2.5 degrees
+y2026t2.5=ds2%>%filter(year==2024)
+y2026t2.5$date_only=y2026t2.5$date_only+365+365
+y2026t2.5$TMAX=y2026t2.5$TMAX+slope2.5+slope2.5
+
+# New data for 2027 no change
+y2027t0=y2026t0
+y2027t0$date_only=y2027t0$date_only+365
+y2027t0$year="2027"
+
+# New data for 2027 2.5 degrees
+y2027t2.5=y2026t2.5
+y2027t2.5$date_only=y2027t2.5$date_only+365
+y2027t2.5$TMAX=y2027t2.5$TMAX+slope2.5
+y2027t2.5$year="2027"
+
+# New data for 2028 no change
+y2028t0=y2027t0
+y2028t0$date_only=y2027t0$date_only+365
+y2028t0$year="2028"
+
+# New data for 2028 2.5 degrees
+y2028t2.5=y2027t2.5
+y2028t2.5$date_only=y2028t2.5$date_only+365
+y2028t2.5$TMAX=y2028t2.5$TMAX+slope2.5
+y2028t2.5$year="2028"
+
+y2028t2.5=y2027t2.5
+y2028t2.5$date_only=y2028t2.5$date_only+365
+y2028t2.5$TMAX=y2028t2.5$TMAX+slope2.5
+y2028t2.5$year="2028"
+
+# Adding in the "predictions" 
+pred0=rbind(y2026t0,y2027t0,y2028t0)
+pred0$year=as.numeric(pred0$year)
+
+pred2.5=rbind(y2026t2.5,y2027t2.5,y2028t2.5)
+pred2.5$year=as.numeric(pred2.5$year)
+```
+
+#### Forecasting off of The "New" Data
+
+```{r}
+# Making stream temp predictions off of these fake new temperatures for air
+plotable=forecast(mod5,newdata=pred0)
+adding=as.data.frame(plotable)
+pred0$prediction=adding$`Point Forecast`
+
+plotable2.5=forecast(mod5,newdata=pred2.5)
+adding2.5=as.data.frame(plotable2.5)
+pred2.5$prediction=adding2.5$`Point Forecast`
+```
+
+#### Graphing the Predictions
+
+```{r,fig.width=16, fig.height=6}
+# Adding in the new data to the graph for no change
+plot1=ggplot()+
+  geom_point(aes(y=mod4$fitted.values,x=ds2$date_only), color='palegreen3', size=2.5)+
+  geom_line(aes(x=ds2$date_only,y=ds2$avg_temp_f),color='#003b5c')+
+  geom_line(aes(x=pred0$date_only,y=pred0$prediction),color='palevioletred1')+
+  theme_minimal()+
+  labs(x="Date", y="Average Stream Temperature (Fahrenheit)", title="Predictions of Stream Temperatures", subtitle="Predictions for No Change in Temperature",caption=" \n  ")+
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )
+plot1
+plot2=ggplot()+
+  geom_point(aes(y=mod4$fitted.values,x=ds2$date_only), color='palegreen3', size=2.5)+
+  geom_line(aes(x=ds2$date_only,y=ds2$avg_temp_f),color='#003b5c')+
+  geom_line(aes(x=pred2.5$date_only,y=pred2.5$prediction),color='palevioletred1')+
+  theme_minimal()+
+  labs(x="Date", y="Average Stream Temperature (Fahrenheit)",subtitle="Predictions for 2.5 Degrees Warming by 2050", caption="n=7541 \nSource: National Oceanic and Atmospheric Administration and CastawayWU", title="Predictions of Stream Temperatures")+
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank() 
+  )+
+  annotate("text",x=17050,y=77,label="Green points here represent the actual historic values",color="palegreen3",size=4,fill=NA,label.color=NA)+
+  annotate("text",x=16750,y=37,label="The blue line is a line of best fit",color="#003b5c",size=4,fill=NA,label.color=NA)+
+  annotate("text",x=21050,y=77,label="And the pink lines are predictions out into the future",color="palevioletred1",size=4,fill=NA,label.color=NA)+
+  scale_x_date(date_labels="%Y", date_breaks="2 years")
+
+# Plotting the two graphs side-by-side
+#grid.arrange(plot1,plot2,ncol=2)
+plot2
+#ggsave("predict_plot.jpg", plot2, width=12, height=4, dpi=300)
+```
+
+# Part Three: Tree Canopies
+
+In an attempt to get better predictions, tree canopy data was incorporated to the models.
+
+## The Data
+
+The Tree Canopy Data comes from Tree Plotter Canopy and is available via request from the City of Salem's Natural Resources Department. This data is heavily cleaned and merged with a shapefile of all streams to get a boundary around MIC 12 and MIC 3. This data is now stored as mic3_summary_by_year.csv and mic12_summary_by_year.csv. Both need to be read in.
+
+```{r}
+mic3canopy=read_csv("mic3_summary_by_year.csv")
+mic12canopy=read_csv("mic12_summary_by_year.csv")
+```
+
+Now these two dataframes should be combined into one.
+
+```{r}
+# Adding in a site variable to keep these distinct
+mic3canopy=mic3canopy%>%mutate(site="mic3")
+head(mic3canopy)
+mic12canopy=mic12canopy%>%mutate(site="mic12")
+
+canopy=rbind(mic3canopy,mic12canopy)
+```
+
+The combined dataframe should be joined onto ds2, which is being used to create models.
+
+```{r}
+# Making year numeric for joining purposes
+ds2$year=as.numeric(ds2$year)
+
+# Joining the data
+canopymodds1=inner_join(ds2,mic3canopy,by=join_by(year==Year))
+canopymodds2=inner_join(ds2,mic12canopy,by=join_by(year==Year))
+
+canopymodds=rbind(canopymodds1,canopymodds2)
+```
+
+## Exploratory Data Analysis
+
+### Graphing the Canopies and Stream Temperatures
+
+```{r}
+canopymodds%>%
+  distinct(year,UrbanTreeCanopy_pct_median,site)%>%
+  ggplot()+
+  geom_point(aes(x=year,y=UrbanTreeCanopy_pct_median,color=site, size = 4))+
+  scale_color_manual(values = c("#003b5c","palegreen3")) +
+  theme_minimal() +
+   labs(x="Year",
+       y="Urban Tree Canopy Percentage (Median)",
+       title="Tree Canopy Coverage Data is Limited By Three Nonconsecutive Years",
+       subtitle="Tree Canopy Coverage Percentage for Two Sites Along Mill Creek",
+       caption="n=6 \nSource: City of Salem",
+       color = "Site") + 
+  guides(size = "none") 
+```
+
+## Modelling
+
+### Model 6
+
+Model six is a model that uses the new canopy information, without any interactions aside from day_year\^2. It also ignores the additional weather information.
+
+```{r}
+ds3 = canopymodds %>% mutate(
+  day_year = yday(date_only),
+  year = as.character(year(date_only)),
+  month = month(date_only)
+)
+
+mod6= lm(avg_temp_f~Location+year+factor(month)+Impervious_median+Water_median+Herbaceous_median+BareSoilDr_median+PossiblePl_median+Shrub_median+UrbanTreeCanopy_pct_median+day_year^2, data = ds3)
+summary(mod6)
+plot(mod6)
+sqrt(mean(mod6$residuals^2))
+```
+
+### Model 7
+
+Model six took a hefty hit to the R-squared value, so this is an identical model that instead uses a factor of day_year. Again, this model ignores the weather information.
+
+```{r}
+mod7 = lm(avg_temp_f~Location+year+factor(month)+Impervious_median+Water_median+Herbaceous_median+BareSoilDr_median+PossiblePl_median+Shrub_median+UrbanTreeCanopy_pct_median+factor(day_year), data = ds3)
+summary(mod7)
+plot(mod7)
+sqrt(mean(mod7$residuals^2))
+```
+
+### Model 8
+
+This model includes the weather information and uses day_year\^2.
+
+```{r}
+ds4 = canopymodds %>% mutate(
+  day_year = yday(date_only),
+  year = as.character(year(date_only)),
+  month = month(date_only)
+)
+
+mod8 = lm(avg_temp_f~Location+year+factor(month)+Impervious_median+Water_median+Herbaceous_median+BareSoilDr_median+PossiblePl_median+Shrub_median+UrbanTreeCanopy_pct_median+PRCP+TMAX+day_year^2, data = ds4)
+summary(mod8)
+plot(mod8)
+sqrt(mean(mod8$residuals^2))
+```
+
+### Model 9
+
+Model nine is identical to Model 8, but incorporates the interactions between variables.
+
+```{r}
+mod9 = lm(avg_temp_f~Location+year+PRCP*TMAX+day_of_month*the_month+Impervious_median+Water_median+Herbaceous_median+BareSoilDr_median+PossiblePl_median+Shrub_median+UrbanTreeCanopy_pct_median+PRCP+TMAX, data = ds4)
+summary(mod9)
+plot(mod9)
+sqrt(mean(mod9$residuals^2))
+```
+
+This model technically fits the best, but it is also operating with a slightly higher Root Mean Squared Error and is using fewer points to predict off of, so the fit is more hyperspecific and potentially overfitted. And, the assumptions for this are not really met due to the exploratory data analysis done in earlier stages of the tree canopy models. With more data on tree canopy, this could be promising, but at the current state, it isn't revealing much about the patterns of the data.
